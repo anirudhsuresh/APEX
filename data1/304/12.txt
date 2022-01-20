@@ -1,0 +1,1 @@
+Interest is waning a bit We have not been able to hook TSIK onto any of the dependency chains (example Axis->WSS4J) that we have. We may have to seriously consider the worst case scenario of stopping incubation.

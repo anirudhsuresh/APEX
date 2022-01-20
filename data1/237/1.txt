@@ -1,0 +1,1 @@
+Mailing lists, subversion repository, and JIRA setup was completed, along with accounts for two new committers to the podling Initial code drop committed to repository, starting to work through package name adjustments and code review.

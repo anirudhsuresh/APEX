@@ -1,0 +1,1 @@
+Woden is a Java class library for reading, validating, manipulating, creating and writing WSDL documents, initially to support WSDL 20 and with the longer term aim of supporting past, present and future versions of WSDL.

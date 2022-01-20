@@ -1,0 +1,1 @@
+IPMC reviews: jukka.Sanselan has graduated to a sub-project of Apache Commons. This will be the last report in the incubator.Active committers on the project have been voted committer status in Commons. The project infrastructure (mail lists, repository, and web site) are being migrated to Commons.

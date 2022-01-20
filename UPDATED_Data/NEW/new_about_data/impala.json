@@ -1,0 +1,1 @@
+{"project_name": "Impala", "alias": "impala", "description": "Impala is a high-performance C++ and Java SQL query engine for data stored in Apache Hadoop-based clusters.", "sponsor": "Incubator  (Tom White)", "mentor": "Tom White, Todd Lipcon, Carl Steinbach, Brock Noland", "start_date": "2015-12-03", "end_date": "2017-11-15", "status": "Graduated", "incubation_time": "23"}

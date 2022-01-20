@@ -1,0 +1,1 @@
+Droids is a new Incubator project recently arrived from Apache Labs (end October) It's an intelligent standalone robot framework that allows one to create and extend existing web robots.Things have been quiet this month in Droids. We focus on evolving the design and building a larger community.

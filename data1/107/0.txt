@@ -1,0 +1,1 @@
+Flex is an application framework for building Flash-based applications.Entered incubation December 30th, 2011.The podling is just getting started, accounts and infrastructure are being created.Signed off by mentor: bdelacretaz, greddin.

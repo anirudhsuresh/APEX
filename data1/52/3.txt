@@ -1,0 +1,1 @@
+The ActiveMQ project is progressing toward graduation and things are moving along well Below are the highlights of activity on the project: Added Nabble forums as an alternative to ASF mailing lists Added Nathan Mittler as a committer Working on the ActiveMQ 4.0 RC2 release candidate Currently working to accept a donation from Amazon for the ActiveMQ C++ API.

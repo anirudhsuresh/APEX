@@ -1,0 +1,1 @@
+{"project_name": "Crunch", "alias": "crunch", "description": "Crunch is a Java library for writing, testing, and running pipelines of MapReduce jobs on Apache Hadoop.", "sponsor": "Incubator  (Patrick Hunt)", "mentor": "Arun Murthy, Patrick Hunt, Tom White", "start_date": "2012-05-26", "end_date": "2013-02-20", "status": "Graduated", "incubation_time": "8"}

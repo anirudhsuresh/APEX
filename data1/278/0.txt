@@ -1,0 +1,1 @@
+No signs of life There is some interest in WSS4J to use parts for the code with a modified version of Bouncy Castle to speed things up. Let's see the people involved start contributing.

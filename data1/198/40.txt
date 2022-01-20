@@ -1,0 +1,1 @@
+Rat is (still) a small and mature code base without a clear home at Apache to aim for. .(Robert Burrell Donkin.Unlike the last two quarters there has been some development activity with commits by four different committers. Some JIRA issues have been opened and not all of them have been addressed by now.Signed off by mentor:.

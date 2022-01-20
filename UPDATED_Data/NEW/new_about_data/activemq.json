@@ -1,0 +1,1 @@
+{"project_name": "ActiveMQ", "alias": "activemq", "description": "A robust and high performance Message Orientated Middleware provider which will be integrated into Apache Geronimo but also be usable from inside any JVM.", "sponsor": "Geronimo", "mentor": "James Strachan", "start_date": "2005-12-01", "end_date": "2007-02-06", "status": "Graduated", "incubation_time": "14"}

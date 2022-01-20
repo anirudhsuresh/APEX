@@ -1,0 +1,1 @@
+Some minor bug fixes committed.Added new php5 classes to start coding log4php using the new php5 object model.

@@ -1,0 +1,1 @@
+Agila was retired this quarter with only the retirement of the mailing lists outstanding (http://issuesapache.org/jira/browse/INFRA-1056.

@@ -1,0 +1,1 @@
+{"project_name": "mod_ftp", "alias": "mod_ftp", "description": "FTP protocol module for Apache httpd 2.x", "sponsor": "HTTP Server", "mentor": "Jim Jagielski", "start_date": "2005-08-06", "end_date": "2007-02-21", "status": "Graduated", "incubation_time": "15"}

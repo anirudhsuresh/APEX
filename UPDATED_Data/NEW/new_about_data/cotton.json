@@ -1,0 +1,1 @@
+{"project_name": "Cotton", "alias": "cotton", "description": "Cotton is an Apache Mesos framework for running MySQL instances. (Formerly known as Mysos)  Retired for lack of activity", "sponsor": "Incubator  (Jake Farrell)", "mentor": "Dave Lester, Benjamin Hindman, Henry Saputra", "start_date": "2015-06-01", "end_date": "2015-12-01", "status": "Retired", "incubation_time": "5"}

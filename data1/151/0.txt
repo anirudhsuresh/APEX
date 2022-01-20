@@ -1,0 +1,1 @@
+Log4net has elected Rob Grabowski (rgrabowski@apacheorg) as a new committer. This brings the number of active committers to 3, helping meet incubator exit criteria.We have recently migrated from CVS to SVN.We are working towards the next maintenance release with a focus on code quality and improving the available end user documentation.

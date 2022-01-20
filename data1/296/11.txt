@@ -1,0 +1,1 @@
+Ripple is a browser based mobile phone emulator designed to aid in the.development of HTML5 based mobile applications. Ripple is a cross platform.and cross runtime testing/debugging tool. It currently supports such.runtimes as Cordova, WebWorks aand the Mobile Web.Shepherd notes:. Marvin Humphrey (marvin):. . Podling did not report, expected next month.

@@ -1,0 +1,1 @@
+Work is progressing on folding the mod_ftp build system into the normal, generic Apache 2 build environment Additional logging and debugging were added to the present codebase. Creation of the test suite is also continuing.

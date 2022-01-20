@@ -1,0 +1,1 @@
+Chukwa is a distributed log collection and processing system built on top of Hadoop. Chukwa has migrated from relational database to Apache HBase 0.20.6 for data storage. New aggregation script has been built using Apache Pig 0.8 and Apache HBase 0.20.6 combination. Next steps are to begin preparations for Chukwa 0.5 release.Signed off by mentor:.

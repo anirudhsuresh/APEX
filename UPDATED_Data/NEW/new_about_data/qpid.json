@@ -1,0 +1,1 @@
+{"project_name": "Qpid", "alias": "qpid", "description": "Qpid provides multiple language implementations of the Advanced Messaged Queuing Protocol (AMQP)", "sponsor": "Incubator", "mentor": "Cliff Schmidt, Craig Russell, Paul Fremantle, Scott Deboy, Yoav Shapira", "start_date": "2006-08-27", "end_date": "2008-12-18", "status": "Graduated", "incubation_time": "28"}

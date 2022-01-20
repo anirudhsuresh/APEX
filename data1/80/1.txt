@@ -1,0 +1,1 @@
+Click is a page and component oriented Java web framework.Click has been incubating since July 2008.We have released 1.5 final and are in the process of migrating SVN and JIRA.Tasks completed since October:.Public Wiki has been setup.Source code have been exported and are currently being migrated to Apache.Top priorities:.Finish SVN migration.Import issues from existing JIRA.

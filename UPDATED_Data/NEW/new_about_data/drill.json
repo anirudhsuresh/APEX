@@ -1,0 +1,1 @@
+{"project_name": "Drill", "alias": "drill", "description": "Drill is a distributed system for interactive analysis of large-scale datasets, inspired by Google's Dremel.", "sponsor": "Incubator  (Ted Dunning)", "mentor": "Ted Dunning, Grant Ingersoll, Isabel Drost", "start_date": "2012-08-11", "end_date": "2014-11-19", "status": "Graduated", "incubation_time": "27"}

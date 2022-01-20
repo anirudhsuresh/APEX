@@ -1,0 +1,1 @@
+iPMC Reviewers: jukka, jimRCF is a rich component set for JSF. Incubation has started a couple of weeks ago. The SVN, mailing lists and JIRA need to be set up. We are now waiting for an import of a current code drop into the repository.Incubating since: May 2007.

@@ -1,0 +1,1 @@
+BatchEE projects aims to provide a JBatch implementation (aka JSR352) and a.set of useful extensions for this specification.BatchEE has been incubating since 2013-10-03.Shepherd/Mentor notes:. Justin Mclean:. Did not report (3rd time in a row Low mailing list activity.

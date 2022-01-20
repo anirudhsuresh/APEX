@@ -1,0 +1,1 @@
+Stonehenge was just recently accepted into the Incubator So far we have:.Set up the SVN, JIRA and Mailing lists.Added all the committers who have a CLA on file.Built a very basic website.Had a code donation from WSO2.We are awaiting more code donation.We still need to create our incubator status page and add to the list of incubator projects.

@@ -1,0 +1,1 @@
+Easyant is a build system based on Apache Ant and Apache Ivy. Incubating since 2011-01-31.Towards graduation, we need to:. Create a release. Build a community.Since the last report:. no particular progress on the diversity of the community. very little activity on the developper mailing list.Signed off by mentor: bodewig.

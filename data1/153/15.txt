@@ -1,0 +1,1 @@
+LuceneNet has recently gotten into the swing of things. George Aroush has officially moved the project from Sourceforge to the ASF repository. A very active contributor from the Sourceforge project has been proposed and is pending the receipt of his CLA.

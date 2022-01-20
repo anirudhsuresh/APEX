@@ -1,0 +1,1 @@
+Project is moving along with an interested core continuing to work on the software Progress is still slow in terms of community building. Recent additions to the incubator in areas of SOA such as Tuscany, ServiceMix, Celtix etc offer an opportunity for Agila's workflow and BPEL implementations.

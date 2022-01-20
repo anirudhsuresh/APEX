@@ -1,0 +1,1 @@
+Hama is a parallel matrix computational package based on Hadoop.Incubating since: 19 May 2008.The Hama website was published.The automated CI server for Hama integration builds was installed.The users were beginning to evaluate/report the function and perfomance of the Hama.We need to make a guide for the users and developers.

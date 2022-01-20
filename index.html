@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>APEX</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-compat-git.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <!--  -->
+  <link href="//cdn.bootcss.com/noUiSlider/8.5.1/nouislider.min.css" rel="stylesheet">
+  <script src="//cdn.bootcss.com/noUiSlider/8.5.1/nouislider.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+
+
+
+  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/9.2.0/nouislider.js'></script> -->
+
+
+
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    body {
+      /* background-color: teal; */
+      /* background-color: #e74c3c; */
+      /* background-color: #b3e6ff */
+
+      background-color: #b3e6ff;
+      /* background-color: #0f6d9c; */
+    }
+
+    /* #b3e6ff */
+
+
+
+    .main {
+      /* background-color: teal; */
+      /* background-color: #e74c3c; */
+      flex-wrap: wrap;
+      /* padding-left: 5px; */
+      flex-flow: row wrap;
+      /*  */
+      background: #b3e6ff;
+      /* margin-left: 20px;; */
+    }
+
+
+    .box_H {
+      background-color: white;
+      margin: 1px;
+      /* padding: 8px; */
+      color: black;
+      resize: both;
+      border-radius: 1.2em;
+      /* flex-direction: column; */
+      /* border: 1px solid black; */
+      /* transition: all .6s ease-in-out;  */
+      /* transition: transform 400ms ease-in-out; */
+      /* transform: translateZ(0); */
+      /* backface-visibility: hidden; */
+
+
+    }
+
+
+    .box {
+      background-color: white;
+      margin: 8px;
+      padding: 8px;
+      color: black;
+      resize: both;
+      border-radius: 1.2em;
+      flex-direction: column;
+      border: 1px solid black;
+      /* transition: all .6s ease-in-out;  */
+      transition: transform 400ms ease-in-out;
+      filter: drop-shadow(0.75rem 0.75rem 0.75rem #225a75);
+      /* filter: drop-shadow(0 0 0.75rem #225a75); */
+
+
+
+    }
+
+    .box1 {
+      background-color: white;
+
+      margin: 8px;
+      padding: 8px;
+      color: black;
+      border-radius: 1.2em;
+      resize: both;
+      flex-direction: column;
+      filter: drop-shadow(0.75rem 0.75rem 0.75rem #225a75);
+      /* filter: drop-shadow(0 0 0.75rem crimson); */
+      /* filter: drop-shadow(0 0 0.75rem #225a75); */
+      border: 1px solid black;
+      /* transition: all .6s ease-in-out;  */
+      /* transition: transform 750ms; */
+      /* filter: drop-shadow(0 0 0.1rem rgb(4, 73, 73)); */
+
+    }
+
+    /* margin: 2px; */
+    /* padding: 30px; */
+
+    /* .box:hover {
+      transform: scale(1.01);
+      /* transform: scale(1.9); */
+    /* filter: brightness(105%); */
+    /* backface-visibility: hidden; */
+    /* transform: translateZ(0); */
+    /* translate3d(0, 0, 0); */
+    /* -webkit-font-smoothing: antialiased; */
+    /* -webkit-font-smoothing: subpixel-antialiased; */
+    /* }  */
+
+    /* // hover */
+
+    .one {
+      display: flex;
+      height: 220px;
+
+      min-height: 220px;
+
+      /*  */
+    }
+
+    .a1 {
+      flex: 1;
+      /* padding-top: 10px; */
+    }
+
+    .a2 {
+      flex: 1;
+    }
+
+    .b {
+      flex: 1;
+
+      /* padding-top: 10px;
+      padding-left: 10px;  */
+      /* padding-bottom: 7px; */
+      /* padding-left: 10px; */
+    }
+
+    .second_pane {
+      display: flex;
+      height: 820px;
+    }
+
+    .three {
+      flex: 1;
+      /* display: flex; */
+    }
+
+    .four {
+      flex: 6;
+      display: flex;
+    }
+
+    .five {
+      flex: 2;
+    }
+
+    .six {
+      flex: 2;
+      display: flex;
+    }
+
+    .seven {
+      flex-direction: row;
+      display: flex;
+    }
+
+    .seven2 {
+      flex-direction: row;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .f {
+      flex: 1;
+      height: 122px;
+      text-align: center;
+    }
+
+    .e {
+      flex: 1;
+      height: 70px;
+      /* padding: 10px; */
+      margin-top: 12px;
+    }
+
+    .c {
+      flex: 2;
+      height: 300px;
+      /* padding: 10px; */
+      /* margin-top: 12px; */
+      overflow: auto;
+      resize: both;
+    }
+
+    .d {
+      flex: 2;
+      height: 300px;
+      margin-top: 12px;
+      /* padding: 10px; */
+      overflow: auto;
+      resize: both;
+      /* overflow-y: scroll; */
+    }
+
+
+    .d1 {
+      flex: 2;
+      height: 100px;
+      margin-top: 12px;
+      /* padding: 10px; */
+      overflow: auto;
+      resize: both;
+      /* overflow-y: scroll; */
+    }
+
+    .s {
+      flex: 2;
+      min-height: 380px;
+      /* padding-left: 10px; */
+      /* padding-top: 10px; */
+      overflow-y: scroll;
+      /* display: inline-block; */
+      /* margin: 0 auto; */
+    }
+
+    .five1 {
+      flex: 2;
+    }
+
+    .five2 {
+      flex: 2;
+      /* flex-shrink:10; */
+    }
+
+    .resize {
+      flex: 4;
+      /* padding: 15px; */
+      filter: drop-shadow(0 0 0.1rem rgb(4, 73, 73));
+    }
+
+
+    .resize1 {
+      flex: 1;
+      filter: drop-shadow(0 0 0.1rem rgb(4, 73, 73));
+      /* padding: 15px; */
+    }
+
+    .resize2 {
+      flex: 4;
+      filter: drop-shadow(0 0 0.1rem rgb(4, 73, 73));
+      /* padding: 15px; */
+    }
+
+    .resize12 {
+      flex: 1;
+      filter: drop-shadow(0 0 0.1rem rgb(4, 73, 73));
+      /* padding: 15px; */
+    }
+
+    @media (max-width: 768px) {
+
+      /*breakpoint*/
+      .one {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 768px) {
+
+      /*breakpoint*/
+      .three {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 768px) {
+
+      /*breakpoint*/
+      .second_pane {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 768px) {
+
+      /*breakpoint*/
+      .four {
+        flex-direction: column;
+      }
+    }
+
+    line {
+      stroke: grey;
+    }
+
+    .changing div {
+      font-size: 50px;
+      color: #fff;
+    }
+
+    .changing_div2 {
+      font-size: 50px;
+      color: #fff;
+
+    }
+
+
+    .one_one {
+      display: flex;
+      /* height: 180px; */
+      /* height: auto; */
+      /* width: auto; */
+      /* float: left; */
+      /* min-height: 180px; */
+    }
+
+    .one_a1 {
+      flex: 1;
+      /* min-width: 100px; */
+      height: 20px;
+
+      /* position: absolute; */
+
+      /* padding-top: 10px; */
+    }
+
+    .one_a2 {
+      flex: 1;
+
+
+    }
+
+    .box2 {
+      /* background-color: white; */
+
+      /* margin: 8px; */
+      /* padding: 8px; */
+
+      color: black;
+      /* border-radius: 1.2em; */
+      resize: both;
+      flex-direction: column;
+      /* filter: drop-shadow(0.75rem 0.75rem 0.75rem #225a75); */
+
+      /* border: 1px solid black; */
+
+    }
+
+    /* new slider */
+  </style>
+</head>
+
+<body>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="project_info.js"></script>
+  <div class="footer">
+
+    <!-- <i class="fa fa-question-circle" style="font-size:48px;color:red"></i> -->
+
+    <div id="button"></div>
+    <div id="container1">
+
+      <div class="container_g">
+        <footer class="site-footer">
+          <div class="container1">
+            <div class="row_footer">
+              <div class="col-sm-12 col-md-6">
+                <h6>About</h6>
+                <p class="text-justify">Apache Incubator Project Explorer (APEX) is a long-term research project, in
+                  which
+                  models and algorithms to integrate
+                  and advance the analysis and visualization of social networks and technical networks are being
+                  developed.
+                  APEX is the
+                  design and implementation of a software tool intended for research in OSS projects, especially for
+                  ASF
+                  incubator
+                  projects.</p>
+                <p>This Project Sponsored by the <a href="https://nsf.gov/index.jsp">NSF</a> <a
+                    href="https://nsf.gov/awardsearch/showAward?AWD_ID=2020751">Grant</a> to study OSS Sustainability
+                  using
+                  socio-technical and governance data.
+                <p>
+                  <a href="https://nsf.gov/index.jsp"><img src="NSF_4-Color_bitmap_Logo.png" width="70" height="70"></a>
+                  &nbsp
+                  <a style="  color: white;font:san-serif;font-size:26px;"
+                    href="https://decallab.cs.ucdavis.edu/">decallab</a>.
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <h6>contributors</h6>
+                <ul class="footer-links">
+                  <li><a href="https://anirudh-suresh-ramchandran.web.app/">Anirudh
+                      Ramchandran</a></li>
+                  <li><a href="https://www.linkedin.com/in/likangyin/">Likang Yin</a></li>
+                  <li><a href="https://www.cs.ucdavis.edu/~filkov/">Vladimir Filkov</a></li>
+                </ul>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <h6>Quick Links</h6>
+                <ul class="footer-links">
+                  <li><a
+                      href="mailto:filkov@ucdavis.edu?subject=APEX Dashboard!&body=I'm here from testing out APEX!">Contact
+                      us / Contribute</a></li>
+                  <li><a href="https://doi.org/10.5281/zenodo.4480753">Data</a></li>
+                  <li><a href="https://www.cs.ucdavis.edu/~filkov/papers/oss_sustain_forecast.pdf">Papers</a></li>
+
+                </ul>
+              </div>
+
+            </div>
+
+          </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="title">
+    <div id="home" class="popupTitle">
+      <!-- <a><img src="apache.PNG" width="25" height="20" /></a> -->
+      <a><img src="feather-16.png" width="25" height="20" /></a>
+
+      <a class="new" href="https://github.com/anirudhsuresh/APEX" target="_blank">ASFI Project Explorer
+        (APEX) </a>
+      <i class="fa fa-question-circle"></i>
+    </div>
+
+  </div>
+  <!-- <li class="fa fa-question-circle grow"></li> -->
+
+
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+
+
+
+  <div class="main">
+    <div class="one">
+      <!-- <div class="a box" style="text-align:left";>  -->
+      <div class="a1 box" style="text-align: center" ;>
+        <div class="resize box_H">
+          <header>Project Selector
+          </header>
+        </div>
+        <br />
+
+        <div class="one_one">
+          <div class="one_a1 box2" style="text-align: center" ;>
+            <label>
+              Project
+              <!--  -->
+
+              <select type="text" id="txt_ide" placeholder="Select a project here :)"
+                oninput="getMonth();yes();make_chart();updateAll();UpdateMaxIncubation();">
+              </select>
+
+              <!-- yes();getMonth() -->
+
+
+            </label>
+          </div>
+
+
+
+          <div class="one_a2 box2" style="text-align: center" ;>
+            <input class="btn-success has-spinner" type="button" value="Open Parallel Window" onclick="openWin()">
+          </div>
+
+          <div class="one_a2 box2" style="text-align: center" ;>
+            <small class="pro_tit"><input type="checkbox" id="make_range_slider">Range Slider</input></small>
+          </div>
+        </div>
+
+
+        <p>
+          <label>
+            <a id="from"> </a>
+            ~
+            <a id="to"> </a>
+          </label>
+        </p>
+        <div id="hideableDiv2" class="well">
+
+          <label>
+            Month
+            <output class="month_name" id="Month">1</output>
+            <!-- <input id="amount" type="number" value="0" min="1" max="90" oninput="MaxIncubation.value=amount.value";getMonth();yes();forceProperties.selected_data.month=value; updateAll(); /> -->
+            <input id="MaxIncubation" type="range" min="1" max="90" value="1" step="1"
+              oninput="getMonth();yes();update_month_id(MaxIncubation.value); updateAll();" />
+          </label>
+        </div>
+        <!-- getMonth();yes() -->
+        <!-- oninput="update_month_id(MaxIncubation.value); forceProperties.selected_data.month=value; updateAll();" /> -->
+
+
+        <div id="hideableDiv" class="well">
+
+          <div id="html5"></div>
+
+        </div>
+
+        <br />
+        <!-- <br /> -->
+
+        <label class="s_date">Starts:
+          <a id="start1"></a>
+        </label>
+
+
+
+        <label class="end_date">Ends:
+
+          <a id="end1"></a>
+        </label>
+
+      </div>
+
+      <script src="https://d3js.org/d3.v4.min.js"></script>
+      <!-- <script src="chart_mouseover.js"></script> -->
+
+      <div class="b box">
+        <div class="resize box_H">
+          <header>
+            Graduation forecast &nbsp;&nbsp;&nbsp;
+            <small class="pro_tit">Current Project:</small>&nbsp;
+            <small class="pro_tit" id="pro_title"></small>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <small class="pro_tit">Current Period:</small>
+            <small class="pro_tit" id="month_period_start"></small>
+            <small class="pro_tit">~</small>
+            <small class="pro_tit" id="month_period_end"></small>
+          </header>
+        </div>
+        <br />
+        <div id="my_dataviz"></div>
+
+      </div>
+    </div>
+    <script src="./js/d3.v4.min.js"></script>
+
+    <div class="second_pane">
+      <div class="three">
+        <div class="c box">
+          <div class="resize box_H">
+            <header>Project Details</header>
+          </div>
+          <p>
+            <label><b>Project Name:</b> <a id="project_name" target="_blank"> </a>
+            </label>
+            <label>
+              <a id="link"> </a>
+            </label>
+          </p>
+          <p class="outset">
+
+            <label><b>About:</b></label>
+            <a id="intro">Details about the project</a>
+          </p>
+
+          <p>
+            <label><b>Status:</b>
+              <a id="status"> </a>
+            </label>
+          </p>
+
+          <p>
+            <label><b>Sponsor:</b>
+              <a id="sponsor"></a>
+            </label>
+          </p>
+
+          <p>
+            <label><b>Mentor:</b>
+              <a id="mentor"></a>
+            </label>
+          </p>
+          <!-- <p><label>Starts:
+            <a id="start"></a>
+            </label> -->
+
+          <!-- <label>Ends:
+             
+            <a id="end"></a>
+            </label></p> -->
+        </div>
+        <div class="d box">
+
+          <div class="resize box_H">
+            <header>Project Reports</header>
+          </div>
+          <br />
+
+          <div class="holder"></div>
+          <div id='content' class="msg1"></div>
+
+          <p>
+            <label>Link to Actual Report:
+              <a id="repo_link" target="_blank"></a>
+            </label>
+          </p>
+          <p>
+            <label>
+              <small class="pro_tit">Current Period:</small>&nbsp;
+              <small class="pro_tit" id="reports_month"></small>
+            </label>
+          </p>
+
+
+          <div class="bottompane" style="
+                text-align: justify;
+                /* border: thin solid black; */
+                /* overflow: auto; */
+                /* resize: both; */
+                height: 180px;
+                width: 250px;
+                font: size 110%;
+              ">
+            <p><output id="textss">Project Reports</output></p>
+          </div>
+        </div>
+        <!-- <div class="d1 box"> -->
+        <!-- <div class="holder"></div>
+
+
+          <div id='content' class="msg1"></div>
+        </div> -->
+      </div>
+
+      <script src="importantUpdate.js"></script>
+      <script src="./js/d3.v4.min.js"></script>
+      <script src="./js/viz.v1.1.0.min.js"></script>
+      <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+      <script src="call_email_network_nodes.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+      <script src="./script.js"></script>
+      <script src="extra_functionality.js"></script>
+      <script src="include.js"></script>
+      <script src="d3.v3.js"></script>
+      <script src="Range_Slider_Tech_Network.js"></script>
+      <script src="tech_net.js"></script>
+      <script src="edge_bud.js"></script>
+      <script src="Range_Slider_Email_Network.js"></script>
+      <script src="Force_Connected_Email_Net.js"></script>
+
+      <div class="four">
+        <div class="five1">
+          <div class="five">
+            <div class="simple" id="fluid">
+              <div class="s box" id="fluid">
+                <div class="seven">
+                  <div class="resize box_H">
+                    <header>
+
+                      Social Network &nbsp;&nbsp;&nbsp;
+                      <small class="pro_tit">Current Project:</small>&nbsp;<small class="pro_tit"
+                        id="pro_title1"></small>
+                      <input type="checkbox" id="chk"> <small class="pro_tit">Circular Graph Layout</small></input>
+
+
+                    </header>
+
+                  </div>
+                  <!--  -->
+
+                </div>
+                <svg id="middlesvg" width="700" height="280">
+
+                </svg>
+
+                <!-- <div class="resize1 box">
+                  <div id="tooltip_man">
+                    <div id="anim">
+                      <span class="tooltip" style="color: #fff; font-size: 15px; opacity: 0.7" 15px;opacity: 0.5;
+                        data-tooltip="^:Mentors.*:Committers">&#10067;</span>
+                    </div>
+                  </div>
+                </div> -->
+
+                <!-- <svg id = "middlesvg" ></svg> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="e box1">
+
+            <header>Social Network Nodes</header>
+
+            <br />
+            <label>Current Node:</label>
+            <!-- <button href="#" id="tglr" class="popover-toggle" title="Email Thread"></button> -->
+            <button href="#" id="tglr" class="popover-toggle">
+              <span><a id="current_node"></a></span>
+            </button>
+
+            <div id="customdiv" style="display: none">
+              <div id="popover-content" class="hide">
+                <div class="inside-title"><a id="inside_title"></a></div>
+                <div class="popman2"></div>
+              </div>
+            </div>
+
+            <div class="small_box">
+              <!-- <button href="#" id="tglr" class="button" title="Popover Header"><span><a -->
+              <!-- id="current_node"></a></span></button> -->
+
+              <div id="customdiv" style="display: none">
+                <div id="popover-content" class="hide">
+                  <div class="popman"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="six">
+            <div class="f box1">
+              <h4><a class="i_label" id="num_emails"></a></h4>
+              <label class="s_label"> Number of Emails </label>
+            </div>
+            <div class="f box1">
+              <h4><a class="i_label" id="num_senders"></a></h4>
+              <label class="s_label">Senders </label>
+            </div>
+            <div class="f box1">
+              <h4><a class="i_label" id="email_per_dev"></a></h4>
+              <label class="s_label">Emails Per Sender </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="five1">
+          <div class="five">
+            <div class="simple2" id="fluid">
+              <div class="s box">
+
+                <div class="seven2">
+                  <div class="resize2 box_H">
+                    <header>
+                      Technical Network&nbsp;&nbsp;&nbsp;
+                      <small class="pro_tit">Current Project:</small>&nbsp;<small class="pro_tit"
+                        id="pro_title2"></small>
+                    </header>
+                  </div>
+
+                </div>
+                <svg title="Technical Network" id="rightsvg" width="700" height="280"></svg>
+
+
+              </div>
+            </div>
+            <div class="e box1">
+
+              <header>Technical Network Nodes</header>
+
+              <br />
+              <label>Current Node:</label>
+              <button href="#" id="tglr1" class="popover-toggle">
+                <span><a id="current_node1"></a></span>
+              </button>
+              <div id="customdiv1" style="display: none">
+                <div id="popover-content1" class="hide">
+                  <div class="inside-title"><a id="inside_title1"></a></div>
+                  <div class="popman1"></div>
+                </div>
+              </div>
+
+            </div>
+            <div class="six">
+              <div class="f box1">
+                <h4><a class="i_label" id="num_commits"></a></h4>
+                <label class="s_label">Number of Commits </label>
+              </div>
+              <div class="f box1">
+                <h4><a class="i_label" id="num_committers"></a></h4>
+                <label class="s_label">Committers </label>
+              </div>
+              <div class="f box1">
+                <h4><a class="i_label" id="commit_per_dev"></a></h4>
+                <label class="s_label">Commits Per Committers</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="no_ui_slider.js"></script>
+    <!-- <script type="module" src="no_ui_slider.js"></script> -->
+    <script src="hiding_not_hiding.js"></script>
+    <script src="updating.js"></script>
+    <script src="d3.v3.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="table_search2.js"></script>
+    <script type="text/javascript" src="table_search11.js"></script>
+
+    <script src="tech_merged.js"></script>
+    <!-- end question mark! -->
+
+    <script src="chart_mouseover.js"></script>
+    <!-- <script src="make_chart_alt.js"></script> -->
+  </div>
+  <!--  -->
+
+  <script>
+    var d = ['Select a project here :)'
+      , 'Ace [graduated]',
+      'APISIX [graduated]',
+      'AWF [retired]',
+      'Abdera [graduated]',
+      'Accumulo [graduated]',
+      'ActiveMQ [graduated]',
+      'Agila [retired]',
+      'Airavata [graduated]',
+      'Airflow [graduated]',
+      'Allura [graduated]',
+      'Alois [retired]',
+      'Amaterasu [retired]',
+      'Ambari [graduated]',
+      'Amber [graduated]',
+      'Any23 [graduated]',
+      'Apex [graduated]',
+      'AriaTosca [retired]',
+      'Aries [graduated]',
+      'AsterixDB [graduated]',
+      'Atlas [graduated]',
+      'Aurora [graduated]',
+      'BatchEE [graduated]',
+      'Beam [graduated]',
+      'Bean Validation [graduated]',
+      'Beehive [graduated]',
+      'Bigtop [graduated]',
+      'Bloodhound [graduated]',
+      'Bluesky [retired]',
+      'Blur [retired]',
+      'Brooklyn [graduated]',
+      'Buildr [graduated]',
+      'CXF [graduated]',
+      'Calcite [graduated]',
+      'CarbonData [graduated]',
+      'Cassandra [graduated]',
+      'Cayenne [graduated]',
+      'Celix [graduated]',
+      'Chemistry [graduated]',
+      'Chukwa [graduated]',
+      'Clerezza [graduated]',
+      'Click [graduated]',
+      'Climate Model Diagnostic Analyzer [retired]',
+      'CloudStack [graduated]',
+      'CommonsRDF [graduated]',
+      'Composer [retired]',
+      'Concerted [retired]',
+      'Cordova [graduated]',
+      'Corinthia [retired]',
+      'Cotton [retired]',
+      'CouchDB [graduated]',
+      'Crunch [graduated]',
+      'Curator [graduated]',
+      'Daffodil [graduated]',
+      'DataFu [graduated]',
+      'DataSketches [graduated]',
+      'DeltaSpike [graduated]',
+      'Deltacloud [graduated]',
+      'Depot [retired]',
+      'Derby [graduated]',
+      'DeviceMap [graduated]',
+      'DirectMemory [graduated]',
+      'Directory [graduated]',
+      'DistributedLog [graduated]',
+      'DolphinScheduler [graduated]',
+      'Drill [graduated]',
+      'Droids [retired]',
+      'Druid [graduated]',
+      'Dubbo [graduated]',
+      'ECharts [graduated]',
+      'ESME [graduated]',
+      'Eagle [graduated]',
+      'EasyAnt [graduated]',
+      'Edgent [retired]',
+      'Empire-db [graduated]',
+      'Etch [graduated]',
+      'Falcon [graduated]',
+      'Felix [graduated]',
+      'Fineract [graduated]',
+      'Flex [graduated]',
+      'Flink [graduated]',
+      'Flume [graduated]',
+      'Fluo [graduated]',
+      'FreeMarker [graduated]',
+      'FtpServer [graduated]',
+      'Gearpump [retired]',
+      'Geode [graduated]',
+      'Geronimo [graduated]',
+      'Giraph [graduated]',
+      'Gobblin [graduated]',
+      'Gora [graduated]',
+      'Gossip [retired]',
+      'Graffito [retired]',
+      'Griffin [graduated]',
+      'Groovy [graduated]',
+      'Guacamole [graduated]',
+      'HAWQ [graduated]',
+      'HCatalog [graduated]',
+      'HISE [retired]',
+      'HORN [retired]',
+      'HTrace [retired]',
+      'Hadoop Development Tools (HDT) [retired]',
+      'Hama [graduated]',
+      'Harmony [graduated]',
+      'Helix [graduated]',
+      'Heraldry [retired]',
+      'Hermes [graduated]',
+      'Hudi [graduated]',
+      'Iceberg [graduated]',
+      'Ignite [graduated]',
+      'Impala [graduated]',
+      'Imperius [retired]',
+      'IoTDB [graduated]',
+      'Isis [graduated]',
+      'Ivy [graduated]',
+      'JDO [graduated]',
+      'JSPWiki [graduated]',
+      'Jackrabbit [graduated]',
+      'Jena [graduated]',
+      'Johnzon [graduated]',
+      'Joshua [graduated]',
+      'JuiCE [retired]',
+      'Juneau [graduated]',
+      'Kabuki [retired]',
+      'Kafka [graduated]',
+      'Kalumet [retired]',
+      'Kato [retired]',
+      'Kitty [retired]',
+      'Knox [graduated]',
+      'Kudu [graduated]',
+      'Kylin [graduated]',
+      'Lens [graduated]',
+      'Lenya [graduated]',
+      'Libcloud [graduated]',
+      'Lokahi [retired]',
+      'Lucene.NET [graduated]',
+      'Lucy [graduated]',
+      'MADlib [graduated]',
+      'MRQL [retired]',
+      'MRUnit [graduated]',
+      'ManifoldCF [graduated]',
+      'Marmotta [graduated]',
+      'Mesos [graduated]',
+      'MetaModel [graduated]',
+      'Metron [graduated]',
+      'Mnemonic [graduated]',
+      'Muse [graduated]',
+      'Mynewt [graduated]',
+      'Myriad [retired]',
+      'NMaven [retired]',
+      'NPanday [retired]',
+      'NetBeans [graduated]',
+      'NiFi [graduated]',
+      'Nutch [graduated]',
+      'Nuvem [graduated]',
+      'ODF Toolkit [retired]',
+      'OFBiz [graduated]',
+      'OGNL [graduated]',
+      'OODT [graduated]',
+      'Ode [graduated]',
+      'Olingo [graduated]',
+      'Olio [retired]',
+      'Omid [graduated]',
+      'Onami [graduated]',
+      'Oozie [graduated]',
+      'Open Climate Workbench [graduated]',
+      'OpenAz [retired]',
+      'OpenJPA [graduated]',
+      'OpenNLP [graduated]',
+      'OpenOffice.org [graduated]',
+      'OpenWebBeans [graduated]',
+      'OpenWhisk [graduated]',
+      'Openmeetings [graduated]',
+      'PDFBox [graduated]',
+      'PLC4X [graduated]',
+      'Parquet [graduated]',
+      'Phoenix [graduated]',
+      'PhotArk [retired]',
+      'Pig [graduated]',
+      'Pinot [graduated]',
+      'Pirk [retired]',
+      'Pivot [graduated]',
+      'PredictionIO [graduated]',
+      'Provisionr [retired]',
+      'Pulsar [graduated]',
+      'Qpid [graduated]',
+      'Quickstep [retired]',
+      'RCF [retired]',
+      'REEF [graduated]',
+      'Ranger [graduated]',
+      'Ratis [graduated]',
+      'Rave [graduated]',
+      'Ripple [retired]',
+      'River [graduated]',
+      'RocketMQ [graduated]',
+      'Roller [graduated]',
+      'Rya [graduated]',
+      'S2Graph [retired]',
+      'S4 [retired]',
+      'SAMOA [retired]',
+      'SINGA [graduated]',
+      'SIS [graduated]',
+      'Samza [graduated]',
+      'Sanselan [graduated]',
+      'Sentry [graduated]',
+      'ServiceComb [graduated]',
+      'ServiceMix [graduated]',
+      'ShardingSphere [graduated]',
+      'Shindig [graduated]',
+      'Shiro [graduated]',
+      'Sirona [retired]',
+      'SkyWalking [graduated]',
+      'Slider [retired]',
+      'Sling [graduated]',
+      'SocialSite [retired]',
+      'Solr [graduated]',
+      'SpamAssassin [graduated]',
+      'Spark [graduated]',
+      'Sqoop [graduated]',
+      'Stanbol [graduated]',
+      'Stonehenge [retired]',
+      'Storm [graduated]',
+      'Stratos [graduated]',
+      'Streams [graduated]',
+      'Subversion [graduated]',
+      'Superset [graduated]',
+      'Synapse [graduated]',
+      'Syncope [graduated]',
+      'SystemML [graduated]',
+      'TVM [graduated]',
+      'Tajo [graduated]',
+      'Tamaya [retired]',
+      'Tapestry [graduated]',
+      'Tashi [retired]',
+      'Taverna [retired]',
+      'Tephra [graduated]',
+      'Tez [graduated]',
+      'Thrift [graduated]',
+      'Tika [graduated]',
+      'TinkerPop [graduated]',
+      'Tobago [graduated]',
+      'Traffic Control [graduated]',
+      'Traffic Server [graduated]',
+      'Trafodion [graduated]',
+      'Trinidad [graduated]',
+      'TripleSoup [retired]',
+      'Tuscany [graduated]',
+      'Twill [graduated]',
+      'UIMA [graduated]',
+      'Unomi [graduated]',
+      'Usergrid [graduated]',
+      'VCL [graduated]',
+      'VXQuery [graduated]',
+      'Warble [retired]',
+      'Wave [retired]',
+      'WebWork 2 [graduated]',
+      'Weex [retired]',
+      'Whirr [graduated]',
+      'Wicket [graduated]',
+      'Wink [graduated]',
+      'Wookie [graduated]',
+      'XAP [retired]',
+      'XMLBeans [graduated]',
+      'Yoko [retired]',
+      'Zeppelin [graduated]',
+      'Zeta Components [retired]',
+      'Zipkin [retired]',
+      'cTAKES [graduated]',
+      'iBATIS [graduated]',
+      'iota [retired]',
+      'jUDDI [graduated]',
+      'jclouds [graduated]',
+      'mod_ftp [graduated]',
+      'stdcxx [graduated]']
+
+    var select = document.getElementById('txt_ide');
+
+    for (var i = 0; i < d.length; i++) {
+      var opt = document.createElement('option');
+      opt.textContent = d[i]
+      select.appendChild(opt);
+    }
+
+    if ($("#chk").is(":checked")) console.log("checked");
+    else {
+
+      console.log("unchecked");
+    }
+  </script>
+  <script src="make_chart_alt.js"></script>
+  <!-- </div> -->
+
+
+  <script>
+    function openWin() {
+      window.open("https://anirudhsuresh.github.io/APEX/");
+    }
+  </script>
+</body>
+
+</html>

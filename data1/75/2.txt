@@ -1,0 +1,1 @@
+Initial committer accounts were created and the Jira migration was completed Migration of SourceForge CVS to Apache SVN was completed. New modules developed since the Incubator proposal was submitted (namely JPA module) are switched to the new package naming: org.apache.cayenne. The core modules still use org.objectstyle.cayenne naming.

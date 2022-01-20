@@ -1,0 +1,1 @@
+Click is a page and component oriented Java web framework.Click has been incubating since July 2008.Tasks completed since December:.Replaced all incompatible licensed libraries.Click 2.0.1 was released from the Apache Incubator.New JIRA was created and issues imported from old version.Top priorities:.Review the current diversity in the developer community.

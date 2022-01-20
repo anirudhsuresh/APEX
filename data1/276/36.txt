@@ -1,0 +1,1 @@
+The Imperius project is currently holding discussions about suspending the project. The project did create an SPL implementation and created a release. However, it has not been able to build a community around the project. The consensus of the project appears to be to suspend work on the project. The community should be holding a vote on this soon.Signed off by mentor: kevan.

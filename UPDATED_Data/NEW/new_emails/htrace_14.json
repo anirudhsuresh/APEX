@@ -1,0 +1,1 @@
+[["stack", "colin p mccabe", "1"], ["stack", "jake farrell", "2"], ["stack", "todd lipcon", "2"], ["colin p mccabe", "stack", "1"], ["jake farrell", "stack", "2"], ["jake farrell", "todd lipcon", "1"], ["todd lipcon", "jake farrell", "1"], ["todd lipcon", "stack", "2"]]

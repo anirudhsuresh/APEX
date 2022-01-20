@@ -1,0 +1,1 @@
+RAT is auditing and comprehension for source code and binary releases.RAT entered incubation in October 2007 but only in the last few weeks started to setup the required infrastructure. Most of this is now in place and the IP clearance for the code import is being worked upon now.

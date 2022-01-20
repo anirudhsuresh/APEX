@@ -1,0 +1,1 @@
+Work continues on the 01.0 release, with luck it should be released soon.Stephen Duncan is still working with his employer about getting a CLA signed.Work on an Atom Publishing Protocol client implementation has begun.There are no current issues that require the board's attention.

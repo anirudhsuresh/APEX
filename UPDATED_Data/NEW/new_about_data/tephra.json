@@ -1,0 +1,1 @@
+{"project_name": "Tephra", "alias": "tephra", "description": "Tephra is a system for providing globally consistent transactions on  top of Apache HBase and other storage engines.", "sponsor": "Incubator  (James Taylor)", "mentor": "Alan Gates, James Taylor", "start_date": "2016-03-07", "end_date": "2019-11-15", "status": "Graduated", "incubation_time": "43"}

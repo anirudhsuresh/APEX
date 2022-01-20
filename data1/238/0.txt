@@ -1,0 +1,1 @@
+Project is just starting incubation CLAs are on file for the initial committers. A CCLA has been received for the initial contributions of C++ and Java implementations and the code has been imported into SVN. Activity is starting on the development mailing list and includes new contributors to the project.

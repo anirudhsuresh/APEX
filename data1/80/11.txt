@@ -1,0 +1,1 @@
+Click is a stateless page and component oriented Java web framework.Click has been incubating since July 2008.Tasks completed since June:.New Committer: Adrian Antal.Released Click 2.1.0-RC1, our second Apache release.Released Click 1.5.3, a non-Apache maintenance release hosted at SourceForge.Top priorities:.Release Apache Click 2.1.0.Signed off by:.

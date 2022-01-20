@@ -1,0 +1,1 @@
+{"project_name": "ServiceMix", "alias": "servicemix", "description": "The ServiceMix project will create an ESB and component suite based on the Java Business Interface (JBI) standard - JSR 208.", "sponsor": "Geronimo", "mentor": "James Strachan", "start_date": "2005-12-01", "end_date": "2007-09-19", "status": "Graduated", "incubation_time": "21"}

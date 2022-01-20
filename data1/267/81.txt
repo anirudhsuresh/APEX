@@ -1,0 +1,1 @@
+Droids aims to be an intelligent standalone robot framework that allows to.create and extend existing droids (robots.Droids has been incubating since 2008-10-09.Shepherd/Mentor notes:. johndament:. Did not report. Podling seems to be in bad shape. Prior reports . indicated similar issues.

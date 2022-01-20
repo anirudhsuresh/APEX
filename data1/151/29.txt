@@ -1,0 +1,1 @@
+iPMC Reviewers:log4net is an implementation of the Apache log4j for the .NET Framework.Incubating since: 2004-01-15.iPMC questions / comments:.jukka: Report missing.robertburrelldonkin: Report missing - should ask logging PMC.mvdb: log4net had a graduation vote, but no result (at least afai could find) and no status file update.

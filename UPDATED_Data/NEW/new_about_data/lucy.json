@@ -1,0 +1,1 @@
+{"project_name": "Lucy", "alias": "lucy", "description": "A loose port of the Lucene search engine library, written in C and targeted at dynamic language users.", "sponsor": "Incubator", "mentor": "Chris Hostetter, Chris Mattmann, Joe Schaefer, Upayavira", "start_date": "2010-07-22", "end_date": "2012-02-22", "status": "Graduated", "incubation_time": "19"}

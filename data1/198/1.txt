@@ -1,0 +1,1 @@
+IPMC reviews: jukka.RAT is audit and code comprehension for releases and source.Been very quiet this month. Infrastructure is now mostly setup. Import of RAT main has been completed but the source still need tidying up.Incubating since: October 2007.

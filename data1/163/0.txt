@@ -1,0 +1,1 @@
+The infrastructure work has been completed: mailing lists and SVN repos have been requested and created.The IP clearances for the module codebase have been received and filed, and the source code has been imported into the mod_ftp SVN repo. Work has started on changing the build environment to a more "normal" ASF module setup.

@@ -1,0 +1,1 @@
+All reported bugs have been fixed so it's time to prepare the first stable release.The new php5 version of log4php is ready for the initial import into svn repository. At first, it will support only a minimal set of functionalities.

@@ -1,0 +1,1 @@
+Abdera released it's 04.0-incubating release on April 11th. We've been in incubation since June 2006 and main focus moving forward will be working towards graduation and a 1.0 release. Main item to resolve before graduation is more active committer involvement. 0.4.0 saw a marked increase in community contributions. We also need to continue improving documentation.

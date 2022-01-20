@@ -1,0 +1,1 @@
+Monitoring Solution.Sirona has been incubating since 2013-10-15.Shepherd/Mentor notes:. Justin Mclean:. . No report and very little activity on list, last releases in late 2015. Probably time to ask if there 3 active PMC members and think of ways to. attract committers. John D. Ament:. Emailed podling, retirement is likely.

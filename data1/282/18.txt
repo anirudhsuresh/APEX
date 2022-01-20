@@ -1,0 +1,1 @@
+Kitty is a lightweight, production focused, Java-based application server.performance diagnostic and management utility. Kitty entered incubation on.October 3rd, 2010.A vote to retire the Kitty podling due to inactivity is in progress.Signed off by mentor:.Shepherd: Mohammad Nour.

@@ -1,0 +1,1 @@
+Apache PhotArk will be a complete open source photo gallery application including a content repository for the images, a display piece, an access control layer, and upload capabilities.PhotArk has been accepted for Incubation in August 19.SVN, Mailing Lists and Committer accounts are ready.Community is starting to work on website and initial code.
