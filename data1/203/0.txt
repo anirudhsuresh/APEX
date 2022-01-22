@@ -1,0 +1,1 @@
+Developed minor Roller 13 release and voted to release it.Developed major Roller 2.0 release with group blogging an new UI.Added new committer Elias Torres.Added status page on incubator site: http://incubator.apache.org/projects/roller.html.

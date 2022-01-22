@@ -1,0 +1,1 @@
+Heraldry is a project to implement the OpenID digital identity specification.Despite a single large block checkin recently, there is almost no activity on the heraldry-dev list. Also files previously checked in retain LGPL license headers. This has not been corrected despite requests from the mentors.

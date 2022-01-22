@@ -1,0 +1,1 @@
+OpenEJB discussion is happening on the Incubator mailing list, but the resources from codehaus have not yet been moved over, as they wait for some committers to still file CLAs The latest ETA was to move everything over this week.

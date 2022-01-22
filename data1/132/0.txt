@@ -1,0 +1,1 @@
+The Apache Jackrabbit podling is slowly recovering from the impact of finalizing JSR 170, initializing JSR 283 (the next JCR specification revision EG), and the summer holiday schedule We are in the process of reconfiguring our source directories for an eventual 1.0 release and Maven 2 support. No new committers were added this quarter, though we expect more to be added soon.

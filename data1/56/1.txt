@@ -1,0 +1,1 @@
+Ambari is monitoring, administration and lifecycle management project for Apache Hadoop clusters. Incubating since 30 August 2011. Mailing lists created and mentors subscribed. Confluence created. Initial code committed. Site created. Code grant received. Development proceeding actively. RAT added to pom and report is clean.Signed off by mentor: omalley.

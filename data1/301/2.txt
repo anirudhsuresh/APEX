@@ -1,0 +1,1 @@
+Stonehenge was accepted into the Incubator in December 2008.Since the last board report, there has been further contributions and updates to the Stonehenge codebase and we are working towards our first release. The incubator website is now updated with Stonehenge listing and status page.

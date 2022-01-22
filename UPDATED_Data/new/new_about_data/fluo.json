@@ -1,0 +1,1 @@
+{"project_name": "Fluo", "alias": "fluo", "description": "Fluo is a distributed system for incrementally processing large data sets stored in Accumulo.", "sponsor": "Incubator  (Billie Rinaldi)", "mentor": "Billie Rinaldi, Drew Farris, Josh Elser", "start_date": "2016-05-17", "end_date": "2017-07-19", "status": "Graduated", "incubation_time": "14"}

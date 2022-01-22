@@ -1,0 +1,1 @@
+We have created the mailing lists and source repository but are still waiting for initial committer accounts to be created The contributed source code has been changed to the Apache license and source packages renamed appropriately. As soon as a majority of the initial committers have write access to the repository, the source will be moved to the Apache servers.

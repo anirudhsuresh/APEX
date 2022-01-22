@@ -1,0 +1,1 @@
+The incubator community voted to retire the Bluesky podling. It will be closed in near future and reporting will stop with this period.See here for the vote results:.http://s.apache.org/7oo.Some more context:.http://s.apache.org/4Q2.Signed off by mentor:.

@@ -1,0 +1,1 @@
+BlueSky has been incubating since 01-12-2008 It is an e-learning solution designed to help solve the disparity in availability of qualified education between well-developed cities and poorer regions of China. .Currently, it's the winter holiday now in China. team will be back at Feb, 20th. We will continue to organize code and then update svn repos.Signed off by mentor:.

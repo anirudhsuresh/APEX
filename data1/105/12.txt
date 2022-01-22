@@ -1,0 +1,1 @@
+Mostly a quarter of contributions and new committers that came with them: Domoware Contribution HttpService Contribution WireAdmin Contribution M2 plugin and archetype for OSGi projects completed Organized repository structure R4 released and ASL compatible Might want to list the new committers here: Rob Walker

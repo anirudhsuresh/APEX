@@ -1,0 +1,1 @@
+Lucene4c is stalled for the time being I (Garrett Rooney) simply don't have the time to work on it, and nobody else has jumped up and started contributing. If there's some official way to move it to a "dormant" state until such time as someone feels motivated to work on it again I'd be in favor of that. (added by Otis Gospodnetic on behalf of Garret Rooney

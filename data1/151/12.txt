@@ -1,0 +1,1 @@
+The log4net project is still in incubation, but it is active The Logging Services PMC has elected Rob Grabowski (rgrabowski@apache.org) as a new committer. This would brings the number of active committers to 4, helping meet incubator exit criteria.The log4net committers are working on compatibility with the .NET 2.0 releases from Microsoft and Mono.

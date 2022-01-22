@@ -1,0 +1,1 @@
+The XAP project has been retired.Signed off by: rdonkin, jukka.IPMC comments:.[rdonkin]: XAP is currently being paused. This looks like being the first pause, so some process development is probably going to be required by the IPMC. I suggest that progress reports be required each month for pausing projects.

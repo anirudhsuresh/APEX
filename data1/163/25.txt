@@ -1,0 +1,1 @@
+iPMC Reviewers:The Apache HTTPD mod_ftp Project is a protocol module for Apache 2.x which implements RFCs: 959, 1123, 2228, 238, regarding the FTP specifications.Entered incubation: 2005-08-06; Exited incubation for httpd TLP: 2007-02-15.The mod_ftp podling, httpd TLP and incubator PMC have voted to graduate mod_ftp to httpd's domain as its subproject.

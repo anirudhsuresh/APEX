@@ -1,0 +1,1 @@
+Signed-off-by:. (gossip) P. Taylor Goetz. Comments:. (gossip) Josh Elser. Comments: Podling missed creating a report this month. In general, the podling remains low-volume, but has had some repeat contributions from GSOC students in the past 3-months. It's unclear if these contributors will be preserved past the monetary-perks of GSOC. (gossip) Drew Farris. Comments:.

@@ -1,0 +1,1 @@
+log4php is a port of the log4j package for PHP.Very limited activity over the last 3 months. 3 external patches, provided via JIRA were submitted in September, and these are in the process of being vetted and will likely be committed. There are external users but almost no activity on the mailing lists.Incubating since 07/2007.

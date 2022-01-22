@@ -1,0 +1,1 @@
+After committing log4php PHP5 base code, not much going on this month No users has sent contributions and the mailing lists have low activity. Hope to get some user contributions in the next month or two.

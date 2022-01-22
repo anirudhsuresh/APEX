@@ -1,0 +1,1 @@
+{"project_name": "Aurora", "alias": "aurora", "description": "Aurora is a service scheduler used to schedule jobs onto Apache Mesos.", "sponsor": "Incubator  (Benjamin Hindman)", "mentor": "Jake Farrell, Benjamin Hindman, Chris Mattmann, Henry Saputra", "start_date": "2013-10-01", "end_date": "2015-03-18", "status": "Graduated", "incubation_time": "17"}

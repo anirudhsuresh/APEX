@@ -1,0 +1,1 @@
+Graffito has nicely grown recently with activity encouraged by the final release of Jetspeed 20 and good progress made on the JCR support though Jackrabbit. We've just added a new committer: Alexandru Popescu. and some existing Portals committers also actively contributing to the integration of Graffito with Portals.

@@ -1,0 +1,1 @@
+Continued work on the code, working towards a 01.0 release.Added two new committers to the project (Stephen Duncan and Garrett Rooney Stephen is still in discussions with his employer regarding his CLA.Rob Yates' ICLA has been received and account set up.Jira has been set up.

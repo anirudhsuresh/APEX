@@ -1,0 +1,1 @@
+RCF is a rich component set for JSF which supports AJAX We are in the process of analyzing and removing undesired dependencies of our code to be compliant in the OpenSource world.

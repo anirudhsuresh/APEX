@@ -1,0 +1,1 @@
+Accounts have been created for almost everybody in the first round of committers Active discussion is underway about various subjects such as the engine core structure or the deployment model. An IRC chat is scheduled to kick-start these issues. A couple of modules (parser and bom) have also been voted to be imported in Ode's trunk.

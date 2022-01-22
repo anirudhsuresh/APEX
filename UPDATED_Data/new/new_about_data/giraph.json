@@ -1,0 +1,1 @@
+{"project_name": "Giraph", "alias": "giraph", "description": "Giraph is a large-scale, fault-tolerant, Bulk Synchronous Parallel (BSP)-based graph processing framework.", "sponsor": "Incubator", "mentor": "Owen O'Malley, Chris Mattmann, Alan Gates", "start_date": "2011-08-01", "end_date": "2012-05-16", "status": "Graduated", "incubation_time": "9"}

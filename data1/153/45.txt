@@ -1,0 +1,1 @@
+No changes. still a limping along community with the potential for new committers on the horizon for quite some time now but no action towards bringing them on. There is some vitality to the mailing list, but being a mostly auto-generated port of Java Lucene does not an excitingly innovative project make.

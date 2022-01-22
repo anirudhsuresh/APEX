@@ -1,0 +1,1 @@
+{"project_name": "Traffic Server", "alias": "trafficserver", "description": "A scalable and extensible HTTP proxy server and cache.", "sponsor": "Incubator", "mentor": "Doug Cutting, Jim Jagielski, Jean-Frederic Clere, Mladen Turk, Nick Kew", "start_date": "2009-07-13", "end_date": "2010-04-21", "status": "Graduated", "incubation_time": "7"}

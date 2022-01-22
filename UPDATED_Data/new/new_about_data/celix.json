@@ -1,0 +1,1 @@
+{"project_name": "Celix", "alias": "celix", "description": "Celix is an OSGi like implementation in C with a distinct focus on interoperability between Java and C.", "sponsor": "Incubator", "mentor": "Marcel Offermans, Karl Pauls, Roman Shaposhnik", "start_date": "2010-11-02", "end_date": "2014-07-16", "status": "Graduated", "incubation_time": "44"}

@@ -1,0 +1,1 @@
+Community building efforts have been initiated within the Groovy community to help us get to our first release.We have succeeded in generating interest and Groovy contributors have offered to assist on the project by contributing patches/expertise.No further development advances have been made.Signed off by mentor: kevan.

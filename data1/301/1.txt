@@ -1,0 +1,1 @@
+Stonehenge has been incubating since December 2008 Since the last report there has been a contribution of code from Microsoft. All nominated committers have submitted CLAs and are now authorized. Apart from that activity has been slow over the holiday period.Our next steps are to start working towards a first milestone release.

@@ -1,0 +1,1 @@
+LuceneNet is progressing well. Recently MSDN style documentation was added, the website was ironed out a bit and we are on track to release Lucene.Net 1.9 by end of May. Also, the mailing list at ASF is now starting to see some traffic. We are still awaiting the finalization to add our second committer, to the project which we expect to be completed this month.

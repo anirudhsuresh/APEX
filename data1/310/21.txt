@@ -1,0 +1,1 @@
+Yoko (CORBA implementation) has been dissolved, with parts going Geronimo and CXF

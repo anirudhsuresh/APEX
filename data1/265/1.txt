@@ -1,0 +1,1 @@
+Cotton is an Apache Mesos framework for running MySQL instances.Shepherd/Mentor notes:. Drew Farris (drew):. Development on hold. The Cotton PPMC has called for a vote for. retirement from the incubator as of 12/4/2015 with a 72 hour window for. closure.

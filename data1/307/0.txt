@@ -1,0 +1,1 @@
+Nothing much happened in the project; the activity is very low - we voted in a new committer (Vishal Goenka) to get more active WSRP4J is still in the move from the WS to the portals project (move of mailing lists is missing We hope to get a more active community in the near future by incorporating the GSoC code.

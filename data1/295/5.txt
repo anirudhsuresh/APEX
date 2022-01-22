@@ -1,0 +1,1 @@
+RCF is a rich component set (ajax-style) for JSF The RCF Wiki has been created and all committers are now set. We started discussion on the OpenSource efforts, how to manage it, since we need to provide a migration path for current users. We are waiting for an import of a current code drop into the repository.

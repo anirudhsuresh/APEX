@@ -1,0 +1,1 @@
+On 8th December 2007 Woden graduated from Incubation to a sub-project of Apache Web Services The results of the IPMC vote were 8 +1s, no 0s, no -1s. This will be the last Woden report to the Incubator. From the Woden team, thankyou to the IPMC for guiding us to the Apache Way.

@@ -1,0 +1,1 @@
+{"project_name": "JuiCE", "alias": "juice", "description": "OpenSSL based JCE provider. Project going into retired status after lack of community interest.", "sponsor": "XML", "mentor": "Berin Lautenbach", "start_date": "2004-04-05", "end_date": "2007-10-18", "status": "Retired", "incubation_time": "14"}

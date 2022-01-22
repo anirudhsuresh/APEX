@@ -1,0 +1,1 @@
+Ode is currently adding a new round of commiters to its developer base The Software grants for both donations from Intalio and Sybase have arrived and both have been checked in.The community is actively discussing development plans for the two code bases.

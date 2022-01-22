@@ -1,0 +1,1 @@
+{"project_name": "log4cxx2", "alias": "log4cxx2", "description": "Logging for C++. N.B. This is a reboot of the Log4cxx podling which previously graduated.", "sponsor": "Logging Services  (Christian Grobmeier)", "mentor": "Ralph Goers", "start_date": "2013-12-09", "end_date": "2017-03-16", "status": "Graduated", "incubation_time": null}

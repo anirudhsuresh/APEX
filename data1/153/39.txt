@@ -1,0 +1,1 @@
+LuceneNet has been struggling with the absence of the only committer (George Aroush A handful of the top contributors are in the process of rallying and proposing themselves as future committers and rejuvenating the project. There is interest here, but it has been a tough time for this project.

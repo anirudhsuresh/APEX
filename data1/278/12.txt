@@ -1,0 +1,1 @@
+A few more people are interested from WSS4J and XML-Security projects We are trying to formalize a plan to revive this project. Werner (from wss4j) has patches in his sandbox, we are working to get him commit privileges. We have received a certificate from SUN for signing the juice jar so that it can be dropped in just like any other JSSE provider's jar.

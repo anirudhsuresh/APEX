@@ -1,0 +1,1 @@
+Shepherd/Mentor notes:. Julian Hyde (jhyde):. Concerted voted to retire, and on 2016-04-25 the IPMC voted to. retire Concerted. Retirement steps are complete;. see https://issues.apache.org/jira/browse/INFRA-11752.

@@ -1,0 +1,1 @@
+Web development framework focusing on pure OO coding, making the creation of new components very easy Wicket entered the incubator in October 2006.

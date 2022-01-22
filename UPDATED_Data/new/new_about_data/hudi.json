@@ -1,0 +1,1 @@
+{"project_name": "Hudi", "alias": "hudi", "description": "Hudi provides atomic upserts and incremental data streams on Big Data", "sponsor": "incubator  (Julien Le Dem)", "mentor": "Thomas Weise, Luciano Resende, Kishore Gopalakrishnan, Suneel Marthi", "start_date": "2019-01-17", "end_date": "2020-05-20", "status": "Graduated", "incubation_time": "16"}

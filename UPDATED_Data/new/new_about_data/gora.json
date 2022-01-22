@@ -1,0 +1,1 @@
+{"project_name": "Gora", "alias": "gora", "description": "Gora is an ORM framework for column stores such as Apache HBase and Apache Cassandra with a specific focus on Hadoop.", "sponsor": "Incubator", "mentor": "Chris Mattmann, Andrzej Bialecki, Tom White", "start_date": "2010-09-26", "end_date": "2012-01-15", "status": "Graduated", "incubation_time": "15"}

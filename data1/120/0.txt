@@ -1,0 +1,1 @@
+Incubating since: 19 May 2008.Mailing lists, subversion repository, and JIRA setup was completed.Software Grant Agreement (Initial code owners are chanwit and me) was sended for the intial donation of Hama code from the google project.ICLAs were sent, But We are still waiting for the arrival of CCLAs.

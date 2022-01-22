@@ -1,0 +1,1 @@
+We resolved the remaining IP issues that included LGPL Javascript dependencies, invalid copyrights (MyCorp, Inc), and code grants for valid copyrights The Struts PMC then successfully voted to accept the WebWork 2 podling and the Incubator PMC vote passed as well. The infrastructure and website-related graduation tasks have been completed and we are now fully graduated.

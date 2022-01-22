@@ -1,0 +1,1 @@
+Imperius has been incubating since November 2007.Imperius is a rule-based policy evaluation engine.Web site:.Code: Development and bug fixes continue on the code base.Community: Several key bugs were fixed, two new committers were added to the community. Size and diversity of the community has not been improving as expected.

@@ -1,0 +1,1 @@
+The OpenEJB project has begun it's migration into the Incubator Primary activities are setting up infrastructure and establishing a list of active committers. Items completed so far: Status page created and published to Incubator website Lists established and in active use Most CLAs are in, more coming Account created for Daniel Haischt.
