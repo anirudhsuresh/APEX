@@ -37,7 +37,7 @@ html5Slider.noUiSlider.on("change", function (values, handle) {
     parseInt(current_date_range[1])
   );
   // var th = create_for(array_date_range);
-  // console.log(th);
+
   agg_slider();
 });
 

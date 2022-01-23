@@ -1,0 +1,13 @@
+{
+  "name": "c",
+  "version": "1.0.0",
+  "description": "Apache Incubator Project Explorer (APEX) is a long-term research project, in which models and algorithms to integrate and advance the analysis and visualization of social networks and technical networks are being developed. APEX is the design and implementation of a software tool intended for research in OSS projects, especially for ASF incubator projects.",
+  "main": "Force_Connected_Email_Net.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

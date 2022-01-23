@@ -20,23 +20,23 @@ function readTextFile1(file) {
   return allText;
 }
 
-function readTextFile(file) {
-  var rawFile = new XMLHttpRequest();
-  rawFile.open("GET", file, false); // using synchronous call
-  var allText;
-  rawFile.onload = function () {
-    if (rawFile.status != 404) {
-      // analyze HTTP status of the response
-      allText = rawFile.responseText; // e.g. 404: Not Found
-    } else {
-      // show the result
-      allText = "No Data";
-    }
-  };
+// function readTextFile(file) {
+//   var rawFile = new XMLHttpRequest();
+//   rawFile.open("GET", file, false); // using synchronous call
+//   var allText;
+//   rawFile.onload = function () {
+//     if (rawFile.status != 404) {
+//       // analyze HTTP status of the response
+//       allText = rawFile.responseText; // e.g. 404: Not Found
+//     } else {
+//       // show the result
+//       allText = "No Data";
+//     }
+//   };
 
-  rawFile.send(null);
-  return allText;
-}
+//   rawFile.send(null);
+//   return allText;
+// }
 
 function getMonth() {
   var this_month = document.getElementById("Month").value;
@@ -49,32 +49,34 @@ function yes() {
   var this_project = document.getElementById("txt_ide").value;
   var alias_to_name = JSON.parse(readTextFile("new_name_to_alias.json"));
   var proj = alias_to_name[this_project];
-
+  // console.log("here", proj);
   var proj_id = name_to_id[proj];
-
+  // console.log("next", proj_id);
   var month = getMonth();
 
   var m = month + ".txt";
 
   var link = "data1/" + proj_id + "/" + m;
   var paths = `${link}`;
-
+  // console.log("final", paths);
   var read = readTextFile1(paths);
   document.getElementById("textss").value = read;
-
+  // console.log(read);
   add_links(proj_id);
   add_current_month(proj_id);
 }
 
 function add_current_month(proj_id) {
   var month = document.getElementById("Month").value;
-  var start_date = JSON.parse(readTextFile("start_date_dict.json"));
+  // var start_date = JSON.parse(readTextFile("start_date_dict.json"));
+
+  var start_date = readTextFile1("start_date.json");
   var name_proj = document.getElementById("txt_ide").value;
-  var c_month = JSON.parse(readTextFile("month_names_dict.json"));
+  var c_month = JSON.parse(readTextFile1("month_names_dict.json"));
   var p_idss = proj_id;
 
   var ac_date = start_date[p_idss];
-
+  // console.log("after line 66", ac_date, start_date);
   document.getElementById("reports_month").innerHTML = comb_date;
 
   if (month > 12) {
@@ -117,7 +119,7 @@ function add_links(proj_id) {
 
     var ac_date = start_date[p_idss];
 
-    document.getElementById("reports_month").innerHTML = comb_date;
+    // document.getElementById("reports_month").innerHTML = comb_date;
 
     if (month > 12) {
       var re_years = parseInt(month / 12);
@@ -221,7 +223,7 @@ function add_current_month1(proj_id) {
   var p_idss = proj_id;
   var ac_date = start_date[p_idss];
 
-  document.getElementById("reports_month").innerHTML = comb_date;
+  // document.getElementById("reports_month").innerHTML = comb_date;
 
   if (month > 12) {
     var re_years = parseInt(month / 12);
@@ -303,7 +305,7 @@ function add_links1(proj_id) {
     var finals_year = +fi_year + +f_year;
 
     var comb_date = month_words + " " + finals_year;
-    document.getElementById("reports_month").innerHTML = comb_date;
+    // document.getElementById("reports_month").innerHTML = comb_date;
 
     var ac_proj = name_proj;
     var project_name = ac_proj.split("[");

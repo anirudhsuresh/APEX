@@ -89,6 +89,8 @@ function Actual_change(email_info, commit_info, project_info, to_dates) {
   document.getElementById("mentor").innerHTML = project_info.mentor;
   document.getElementById("from").innerHTML = to_dates[0];
   document.getElementById("to").innerHTML = to_dates[1];
+  document.getElementById("reports_month").innerHTML =
+    to_dates[0] + "~" + to_dates[1];
 
   document.getElementById("pro_title").innerHTML = project_info.project_name;
   document.getElementById("pro_title1").innerHTML = project_info.project_name;

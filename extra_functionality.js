@@ -290,7 +290,26 @@ function merge_all_jsons(array2, res) {
 }
 
 function create_new_data1(feed_size) {
-  console.log(feed_size);
+  var end = feed_size[feed_size.length - 1];
+  var start = feed_size[0];
+  var this_project = document.getElementById("txt_ide").value;
+  //  read two json files and update the to and from
+  to_from_info = JSON.parse(
+    readTextFile(
+      `./UPDATED_Data/new/new_month_intervals/${alias_to_name[this_project]}.json`
+    )
+  );
+
+  var to_dates_s = to_from_info[start];
+  var to_dates_e = to_from_info[end];
+  var to_dates = [to_dates_s[0], to_dates_e[1]];
+
+  document.getElementById("from").innerHTML = to_dates[0];
+  document.getElementById("to").innerHTML = to_dates[1];
+  document.getElementById("reports_month").innerHTML =
+    to_dates[0] + "~" + to_dates[1];
+
+  //
   var new_empty = [];
   var feed_size = feed_size;
   var first_data1 = [];
