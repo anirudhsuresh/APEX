@@ -55,7 +55,7 @@ function agg_slider() {
     parseInt(current_date_range[0]),
     parseInt(current_date_range[1])
   ); // this gets us the current range needed
-  console.log(array_date_range);
+  console.log("the array range", array_date_range);
 
   k = create_new_data(array_date_range);
 
