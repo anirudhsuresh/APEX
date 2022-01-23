@@ -109,7 +109,7 @@ function create_for(feed_size) {
   for (const cur_month of feed_size) {
     var projectInfo = JSON.parse(
       readTextFile(
-        `./UPDATED_Data/NEW/email_measures/${alias_to_name[this_project]}_${cur_month}.json`
+        `./UPDATED_Data/new/email_measures/${alias_to_name[this_project]}_${cur_month}.json`
       )
     );
 
