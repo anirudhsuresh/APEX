@@ -72,7 +72,6 @@ Since APEX is designed so as to understand the socio-technical aspects of an Ope
 - ** Forecast Data**:
 
 
-\item Forecast Data Likang: Please write how we generate these
 
 
 
