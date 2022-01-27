@@ -70,7 +70,7 @@ Since APEX is designed so as to understand the socio-technical aspects of an Ope
 - **Reports or Progress Data**:
    1. containing the report or the progress resport in a text format
    2. Example Data [Link](https://github.com/anirudhsuresh/APEX/blob/main/data1/1/0.txt)
-- ** Forecast Data**:
+- **Forecast Data**:
    1. Sustainability Forecast Data: The project sustainability forecast is a .json file containing key-value where the key is the project and the value is the monthly sustainability forecast.
 
 ## Directory
