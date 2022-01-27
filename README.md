@@ -47,7 +47,7 @@ Since APEX is designed so as to understand the socio-technical aspects of an Ope
 ## How to use APEX with custom data:
 1. Project Name --> Divide all Data into number of Months Active 
 2. Data folder structure should be ProjectName-->Number of Months --> all other data
-3. Each data is discussed in more detail below
+3. Each data is discussed in more detail below and below file structure tree diagram can also be referred to
   - **Email network data**: 
        1. Initial CSV file with developer names and receiver names
        2. Final JSON format needed: sender_name, receiver_name, num_emails between them 
@@ -71,6 +71,7 @@ Since APEX is designed so as to understand the socio-technical aspects of an Ope
    1. containing the report or the progress resport in a text format
    2. Example Data [Link](https://github.com/anirudhsuresh/APEX/blob/main/data1/1/0.txt)
 - ** Forecast Data**:
+   1. Sustainability Forecast Data: The project sustainability forecast is a .json file containing key-value where the key is the project and the value is the monthly sustainability forecast.
 
 ## Directory
 ```
