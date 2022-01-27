@@ -72,7 +72,26 @@ Since APEX is designed so as to understand the socio-technical aspects of an Ope
    2. Example Data [Link](https://github.com/anirudhsuresh/APEX/blob/main/data1/1/0.txt)
 - ** Forecast Data**:
 
-
+## Directory
+.
+└── UPDATED DATA/
+    ├── new/
+    │   ├── commits_measure : Data about the commit measurements
+    │   ├── email_measures :Data about the email measurements
+    │   ├── new_about_data : Data about the various projects
+    │   ├── new_emails : Data for social network
+    │   ├── gouped_new_commits :Data for tech network 
+    │   ├── new_forecast : Data for forecast viz
+    │   └── new_month_intervals : Data about the dates
+    ├── new_monthly_commits/
+    │   └── Commmit Links Data : Data about the commit links
+    ├── Takeout/
+    │   └── Drive/
+    │       └── new_deep_dive_email_data/
+    │           └── tester_monthly_emails/
+    │               └── Emails Links Data : data about the email links
+    └── data1/
+        └── report data
 
 
 
