@@ -42,16 +42,65 @@ forceProperties = {
 function readTextFile(file) {
   var rawFile = new XMLHttpRequest();
   rawFile.open("GET", file, false); // using synchronous call
+
   var allText;
   rawFile.onload = function () {
+    console.log("status", rawFile.status);
     if (rawFile.status != 404) {
       // analyze HTTP status of the response
       allText = rawFile.responseText; // e.g. 404: Not Found
     } else {
       // show the result
       allText = "No Data";
-      console.log("im here");
+      // console.log("im here");
       return allText;
+    }
+  };
+
+  try {
+    rawFile.send(null);
+  } catch {}
+  return allText;
+}
+
+// function readTextFile(file) {
+//   var rawFile = new XMLHttpRequest();
+//   rawFile.open("GET", file, false); // using synchronous call
+//   var allText;
+//   rawFile.onload = function () {
+//     try {
+//       // analyze HTTP status of the response
+
+//       return allText;
+//       allText = rawFile.responseText; // e.g. 404: Not Found
+//     } catch {
+//       rawFile.status == 404;
+//       // show the result
+//       allText = "No Data";
+//       // console.log("im here");
+//       return allText;
+//     }
+//   };
+
+//   rawFile.send(null);
+//   return allText;
+// }
+
+var flag = 0;
+
+function readTextFile1(file) {
+  var rawFile = new XMLHttpRequest();
+  rawFile.open("GET", file, false); // using synchronous call
+  var allText;
+  rawFile.onload = function () {
+    if (rawFile.status != 404) {
+      // analyze HTTP status of the response
+      allText = rawFile.responseText; // e.g. 404: Not Found
+      flag = 0;
+    } else {
+      // show the result
+      allText = "No report avaliable for this month";
+      flag = 1;
     }
   };
 

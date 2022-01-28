@@ -6,11 +6,16 @@ function UpdateprojectInfo() {
   email_info = JSON.parse(
     readTextFile(`./UPDATED_Data/new/email_measures/${new_file_path}.json`)
   );
-
-  commit_info = JSON.parse(
-    readTextFile(`./UPDATED_Data/new/commits_measure/${new_file_path}.json`)
-  );
-
+  try {
+    commit_info = JSON.parse(
+      readTextFile(`./UPDATED_Data/new/commits_measure/${new_file_path}.json`)
+    );
+  } catch (err) {
+    commit_info = {};
+    commit_info.num_commits = 0;
+    commit_info.num_committers = 0;
+    commit_info.commit_per_dev = 0;
+  }
   project_info = JSON.parse(
     readTextFile(
       `./UPDATED_Data/new/new_about_data/${alias_to_name[this_project]}.json`
