@@ -222,22 +222,11 @@ function create_new_data1(feed_size) {
     var common_path = `./UPDATED_Data/new/grouped_new_commits/${alias_to_name[this_project]}_${cur_month}.json`;
 
     if (cur_month == feed_size[0]) {
-      try {
-        first_data = JSON.parse(readTextFile(`${common_path}`));
-      } catch (err) {}
-      var first_data1 = [];
-      first_data.forEach((a) => {
-        first_data1.push([a[0], a[1], parseInt(a[2])]);
-      });
+      first_data1 = JSON.parse(readTextFile(`${common_path}`));
     } else {
-      var first_data = [];
-      try {
-        var data1 = JSON.parse(readTextFile(`${common_path}`));
-      } catch (err) {}
-      data1.forEach((a) => {
-        first_data.push([a[0], a[1], parseInt(a[2])]);
-      });
-      new_empty1 = [...first_data, ...new_empty];
+      var data1 = JSON.parse(readTextFile(`${common_path}`));
+
+      new_empty1 = [...data1, ...new_empty];
     }
   }
 
@@ -323,40 +312,6 @@ function reduce_the_emails(input_array, threshold) {
   document.getElementById("num_senders").innerHTML = Math.floor(num_senders);
   document.getElementById("email_per_dev").innerHTML =
     Math.floor(emails_per_dev);
-
-  return new_array;
-}
-
-function reduce_the_commits(input_array, threshold) {
-  new_array = [];
-  input_array.forEach((a) => {
-    if (a[2] > threshold) {
-      new_array.push(a);
-    }
-  });
-
-  // now that we created the new array we need to find the new sender names new number of commits
-  var num_emails = [];
-
-  var num_e = [];
-  var num_emails = [];
-  var num_s = [];
-  var num_committers = [];
-  console.log(new_array);
-  new_array.forEach((a) => {
-    num_e.push(parseInt(a[2]));
-    num_commits = num_e.reduce((a, b) => a + b, 0);
-    num_s.push(a[0]);
-    num_committers = [...new Set(num_s)].length;
-  });
-
-  var commit_per_dev = Math.floor(num_emails / num_committers);
-
-  document.getElementById("num_commits").innerHTML = Math.floor(num_commits);
-  document.getElementById("num_committers").innerHTML =
-    Math.floor(num_committers);
-  document.getElementById("commit_per_dev").innerHTML =
-    Math.floor(commit_per_dev);
 
   return new_array;
 }

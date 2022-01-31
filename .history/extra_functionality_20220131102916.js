@@ -342,7 +342,7 @@ function reduce_the_commits(input_array, threshold) {
   var num_emails = [];
   var num_s = [];
   var num_committers = [];
-  console.log(new_array);
+
   new_array.forEach((a) => {
     num_e.push(parseInt(a[2]));
     num_commits = num_e.reduce((a, b) => a + b, 0);

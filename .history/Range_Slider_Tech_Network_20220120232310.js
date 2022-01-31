@@ -22,7 +22,7 @@ function Update_Tech_Range_Slider(input_data) {
 
   var running_threshold = Math.ceil(res / 100);
 
-  data = reduce_the_commits(data, running_threshold);
+  data = reduce_the_thresh(data, running_threshold);
 
   var bp = viz
     .bP()

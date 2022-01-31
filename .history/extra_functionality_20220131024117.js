@@ -1,3 +1,105 @@
+// div resizing functionalit
+var this_project = document.getElementById("txt_ide").value;
+(function () {
+  var currentScale = 1;
+
+  var cssPrefixesMap = [
+    "scale",
+    "-webkit-transform",
+    "-moz-transform",
+    "-ms-transform",
+    "-o-transform",
+    "transform",
+  ];
+
+  function setScale(scale) {
+    var scaleCss = {};
+
+    cssPrefixesMap.forEach(function (prefix) {
+      scaleCss[prefix] = "scale(" + scale + ")";
+    });
+
+    //   $("div").css(scaleCss);
+    $(".simple").css(scaleCss);
+  }
+
+  $("#decrease").click(function () {
+    setScale((currentScale = currentScale - 0.1));
+  });
+
+  $("#increase").click(function () {
+    setScale((currentScale = currentScale + 0.1));
+  });
+  $("#original").click(function () {
+    setScale((currentScale = 1));
+  });
+
+  $("#comp_inc").click(function () {
+    setScale((currentScale = currentScale + 0.6));
+  });
+})();
+
+// refresh page button
+$(function () {
+  $("a, button").click(function () {
+    $(this).toggleClass("active", 100);
+  });
+});
+
+function refreshPage() {
+  window.location.reload();
+}
+
+// other resize buttons for commit
+(function () {
+  var currentScale = 1;
+
+  var cssPrefixesMap = [
+    "scale",
+    "-webkit-transform",
+    "-moz-transform",
+    "-ms-transform",
+    "-o-transform",
+    "transform",
+  ];
+
+  function setScale(scale) {
+    var scaleCss = {};
+
+    cssPrefixesMap.forEach(function (prefix) {
+      scaleCss[prefix] = "scale(" + scale + ")";
+    });
+
+    //   $("div").css(scaleCss);
+    $(".simple2").css(scaleCss);
+  }
+
+  $("#decrease2").click(function () {
+    setScale((currentScale = currentScale - 0.1));
+  });
+
+  $("#increase2").click(function () {
+    setScale((currentScale = currentScale + 0.1));
+  });
+
+  $("#comp_inc2").click(function () {
+    setScale((currentScale = currentScale + 0.6));
+  });
+
+  $("#original2").click(function () {
+    setScale((currentScale = 1));
+  });
+})();
+
+$(document).scroll(function () {
+  var y = $(this).scrollTop();
+  if (y > 15) {
+    $(".bottomMenu").fadeIn();
+  } else {
+    $(".bottomMenu").fadeOut();
+  }
+});
+
 function create_for(feed_size) {
   var sub_array = [];
   var this_project = document.getElementById("txt_ide").value;
@@ -37,6 +139,7 @@ function create_for_commits(feed_size) {
   var this_project = document.getElementById("txt_ide").value;
   var curr_month = document.getElementById("Month").value;
   var cur_month = feed_size[0];
+
   for (const cur_month of feed_size) {
     try {
       var projectInfo = JSON.parse(
@@ -45,7 +148,6 @@ function create_for_commits(feed_size) {
         )
       );
     } catch (err) {}
-
     sub_array.push(projectInfo);
   }
 
@@ -140,29 +242,30 @@ function create_new_data(feed_size) {
     var common_path = `./UPDATED_Data/new/new_emails/${alias_to_name[this_project]}_${cur_month}.json`;
 
     if (cur_month == feed_size[0]) {
-      new_array = JSON.parse(readTextFile(`${common_path}`));
-      var first_data = [];
-      new_array.forEach((a) => {
-        first_data.push([a[0], a[1], parseInt(a[2])]);
+      first_data = JSON.parse(readTextFile(`${common_path}`));
+
+      var t = [];
+      first_data.forEach((a) => {
+        t.push([a[0], a[1], parseInt(a[2])]);
       });
     } else {
       var data1 = JSON.parse(readTextFile(`${common_path}`));
-      var first_data = [];
+      var t = [];
       data1.forEach((a) => {
-        first_data.push([a[0], a[1], parseInt(a[2])]);
+        t.push([a[0], a[1], parseInt(a[2])]);
       });
-
-      new_empty = [...first_data, ...new_empty];
+      new_empty = [...t, ...new_empty];
     }
   }
-
-  return [first_data, new_empty];
+  console.log(first_data, new_empty);
+  return [t, new_empty];
 }
 
 function reduce_the_thresh(input_array, threshold) {
   new_array = [];
   input_array.forEach((a) => {
     if (a[2] > threshold) {
+      console.log("this is working", a);
       new_array.push(a);
     }
   });
@@ -179,7 +282,7 @@ function merge_all_jsons(array2, res) {
           // console.log(ob);
           ob.nums[ar[0] + ar[1]] = ar;
           ob.result.push(ar);
-        } else ob.nums[ar[0] + ar[1]][2] += ar[2];
+        } else ob.nums[ar[0] + ar[1]][2] += parseInt(ar[2]);
 
         return ob;
       },
@@ -197,20 +300,20 @@ function create_new_data1(feed_size) {
   var start = feed_size[0];
   var this_project = document.getElementById("txt_ide").value;
   //  read two json files and update the to and from
-  to_from_info = JSON.parse(
-    readTextFile(
-      `./UPDATED_Data/new/new_month_intervals/${alias_to_name[this_project]}.json`
-    )
-  );
+  // to_from_info = JSON.parse(
+  //   readTextFile(
+  //     `./UPDATED_Data/new/new_month_intervals/${alias_to_name[this_project]}.json`
+  //   )
+  // );
 
-  var to_dates_s = to_from_info[start];
-  var to_dates_e = to_from_info[end];
-  var to_dates = [to_dates_s[0], to_dates_e[1]];
+  // var to_dates_s = to_from_info[start];
+  // var to_dates_e = to_from_info[end];
+  // var to_dates = [to_dates_s[0], to_dates_e[1]];
 
-  document.getElementById("from").innerHTML = to_dates[0];
-  document.getElementById("to").innerHTML = to_dates[1];
-  document.getElementById("reports_month").innerHTML =
-    to_dates[0] + "~" + to_dates[1];
+  // document.getElementById("from").innerHTML = to_dates[0];
+  // document.getElementById("to").innerHTML = to_dates[1];
+  // document.getElementById("reports_month").innerHTML =
+  //   to_dates[0] + "~" + to_dates[1];
 
   //
   var new_empty = [];
@@ -223,25 +326,17 @@ function create_new_data1(feed_size) {
 
     if (cur_month == feed_size[0]) {
       try {
-        first_data = JSON.parse(readTextFile(`${common_path}`));
+        first_data1 = JSON.parse(readTextFile(`${common_path}`));
       } catch (err) {}
-      var first_data1 = [];
-      first_data.forEach((a) => {
-        first_data1.push([a[0], a[1], parseInt(a[2])]);
-      });
     } else {
-      var first_data = [];
       try {
         var data1 = JSON.parse(readTextFile(`${common_path}`));
-      } catch (err) {}
-      data1.forEach((a) => {
-        first_data.push([a[0], a[1], parseInt(a[2])]);
-      });
-      new_empty1 = [...first_data, ...new_empty];
+      } catch (error) {}
+      new_empty = [...data1, ...new_empty];
     }
   }
 
-  return [first_data1, new_empty1];
+  return [first_data1, new_empty];
 }
 
 function makeButtons(c) {
@@ -289,74 +384,4 @@ function query_buttons() {
       // objTo.replaceWith(divtest);
     });
   });
-}
-
-function reduce_the_emails(input_array, threshold) {
-  new_array = [];
-  input_array.forEach((a) => {
-    if (a[2] > threshold) {
-      console.log("this is working", a);
-      new_array.push(a);
-    }
-  });
-
-  // now that we created the new array we need to find the new sender names new number of commits
-  var num_emails = [];
-
-  var num_senders = [];
-
-  var num_e = [];
-  var num_emails = [];
-  var num_s = [];
-  var num_senders = [];
-  new_array.forEach((a) => {
-    num_e.push(parseInt(a[2]));
-    num_emails = num_e.reduce((a, b) => a + b, 0);
-    num_s.push(a[0]);
-    num_senders = [...new Set(num_s)].length;
-  });
-
-  var emails_per_dev = Math.floor(num_emails / num_senders);
-
-  document.getElementById("num_emails").innerHTML = Math.floor(num_emails);
-
-  document.getElementById("num_senders").innerHTML = Math.floor(num_senders);
-  document.getElementById("email_per_dev").innerHTML =
-    Math.floor(emails_per_dev);
-
-  return new_array;
-}
-
-function reduce_the_commits(input_array, threshold) {
-  new_array = [];
-  input_array.forEach((a) => {
-    if (a[2] > threshold) {
-      new_array.push(a);
-    }
-  });
-
-  // now that we created the new array we need to find the new sender names new number of commits
-  var num_emails = [];
-
-  var num_e = [];
-  var num_emails = [];
-  var num_s = [];
-  var num_committers = [];
-  console.log(new_array);
-  new_array.forEach((a) => {
-    num_e.push(parseInt(a[2]));
-    num_commits = num_e.reduce((a, b) => a + b, 0);
-    num_s.push(a[0]);
-    num_committers = [...new Set(num_s)].length;
-  });
-
-  var commit_per_dev = Math.floor(num_emails / num_committers);
-
-  document.getElementById("num_commits").innerHTML = Math.floor(num_commits);
-  document.getElementById("num_committers").innerHTML =
-    Math.floor(num_committers);
-  document.getElementById("commit_per_dev").innerHTML =
-    Math.floor(commit_per_dev);
-
-  return new_array;
 }
