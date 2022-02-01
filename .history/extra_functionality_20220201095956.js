@@ -125,7 +125,7 @@ function merge_force_json(originalArray) {
 
   const mergedArray = Object.values(arrayHashmap);
 
-  // console.log(mergedArray);
+  console.log(mergedArray);
   R_UpdateEmailNet(mergedArray);
 }
 
@@ -274,7 +274,7 @@ function merge_all_jsons_2(array22, res2) {
 
 function query_buttons() {
   let btns1 = document.querySelectorAll("div.holder button");
-  // console.log(btns1);
+  console.log(btns1);
   btns1.forEach(function (i) {
     i.addEventListener("click", function () {
       var current_month_for_report = i.innerHTML;
@@ -342,13 +342,14 @@ function reduce_the_commits(input_array, threshold) {
   var num_emails = [];
   var num_s = [];
   var num_committers = [];
-  // console.log(new_array);
+  console.log(new_array);
   new_array.forEach((a) => {
     num_e.push(parseInt(a[2]));
     num_commits = num_e.reduce((a, b) => a + b, 0);
     num_s.push(a[0]);
     num_committers = [...new Set(num_s)].length;
   });
+  console.log(num_commits / num_committers);
   var commit_per_dev = Math.floor(num_commits / num_committers);
   document.getElementById("num_commits").innerHTML = Math.floor(num_commits);
   document.getElementById("num_committers").innerHTML =

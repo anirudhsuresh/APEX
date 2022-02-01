@@ -33,7 +33,7 @@ function UpdateTechnicalNet() {
           current_info = read_current_project_info1();
 
           var running_threshold = Math.floor(res / 100);
-          var data = reduce_the_commits(data, running_threshold);
+          var data = reduce_the_thresh(data, running_threshold);
 
           var g = svg.append("g").attr("transform", "translate(185,45)");
 
