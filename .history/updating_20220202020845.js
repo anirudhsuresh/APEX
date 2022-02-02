@@ -6,16 +6,16 @@ function resetAll() {
 }
 
 function updateAll() {
-  // console.log("im here");
-  getMonth();
-  yes();
+  console.log("im here");
   var this_project = document.getElementById("txt_ide").value;
+
   $("#chk").prop("checked", false);
   $("#make_range_slider").prop("checked", false);
   $("#hideableDiv").hide();
   $("#hideableDiv2").show();
   UpdateprojectInfo();
   UpdateEmailNet();
+
   UpdateTechnicalNet();
 }
 
