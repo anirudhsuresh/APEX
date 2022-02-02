@@ -1,7 +1,6 @@
 function UpdateprojectInfo() {
   var this_project = document.getElementById("txt_ide").value;
   var curr_month = document.getElementById("Month").value;
-  console.log(curr_month);
   var new_file_path = alias_to_name[this_project] + "_" + curr_month;
   try {
     email_info = JSON.parse(
@@ -30,9 +29,8 @@ function UpdateprojectInfo() {
     )
   );
   // console.log(to_from_info);
-
-  // document.getElementById("MaxIncubation").max =;
   var to_dates = to_from_info[curr_month];
+  console.log(to_dates);
   Actual_change(email_info, commit_info, project_info, to_dates);
 }
 
@@ -96,8 +94,6 @@ function Actual_change(email_info, commit_info, project_info, to_dates) {
     commit_info.commit_per_dev
   );
   document.getElementById("mentor").innerHTML = project_info.mentor;
-  console.log(to_dates[0], to_dates[1]);
-
   document.getElementById("from").innerHTML = to_dates[0];
   document.getElementById("to").innerHTML = to_dates[1];
   document.getElementById("reports_month").innerHTML =

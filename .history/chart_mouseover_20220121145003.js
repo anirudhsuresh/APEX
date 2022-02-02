@@ -5,7 +5,6 @@ function make_chart() {
   // var ids = name_to_id[this_project];
   // console.log(ids)
   // get which projects folder we need to access
-
   var new_name = this_project.split("[")[0].toLowerCase().replace(/ /g, "");
   var link =
     "UPDATED_Data/new/new_forecast/" +
@@ -13,7 +12,7 @@ function make_chart() {
     "_" +
     "f_data.csv";
   d3.select("#my_dataviz").html(null);
-  // console.log(link.length);
+
   clear_content_of_current_node();
 
   draw(link);
@@ -32,7 +31,6 @@ function draw(link) {
   }).left;
 
   // set the ranges
-
   var x = d3.scaleLinear().range([0, width]);
   var y = d3.scaleLinear().range([height, 0]);
 
@@ -85,8 +83,6 @@ function draw(link) {
       d.date = +d.date;
       d.close = +d.close;
     });
-    // set the incubation length
-    document.getElementById("MaxIncubation").max = data.length;
 
     // scale the range of the data
     x.domain(

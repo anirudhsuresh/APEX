@@ -1,7 +1,6 @@
 function resetAll() {
   console.log("its working");
   document.getElementById("MaxIncubation").value = "1";
-  document.getElementById("Month").value = "1";
   updateAll();
 }
 
@@ -12,7 +11,6 @@ function updateAll() {
 
   // window.alert(name_to_id[this_project], forceProperties.selected_data.project);
   // agg_slider();
-  // make_chart();
   $("#chk").prop("checked", false);
   $("#make_range_slider").prop("checked", false);
   $("#hideableDiv").hide();
@@ -21,6 +19,8 @@ function updateAll() {
   UpdateEmailNet();
 
   UpdateTechnicalNet();
+
+  make_chart();
 }
 
 function updateAll_for_range_slider() {

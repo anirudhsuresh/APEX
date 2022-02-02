@@ -45,7 +45,7 @@ function readTextFile(file) {
 
   var allText;
   rawFile.onload = function () {
-    // console.log("status", rawFile.status);
+    console.log("status", rawFile.status);
     if (rawFile.status != 404) {
       // analyze HTTP status of the response
       allText = rawFile.responseText; // e.g. 404: Not Found

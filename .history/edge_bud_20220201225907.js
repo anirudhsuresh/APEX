@@ -17,18 +17,18 @@ function UpdateEmailNet() {
   var new_name = this_project.split("[")[0].toLowerCase().replace(/ /g, "");
   var curr_month = document.getElementById("Month").value;
   var new_file_path = alias_to_name[this_project] + "_" + curr_month;
-  try {
-    var data = JSON.parse(
-      readTextFile(
-        // `updated_network_data/emails
-        `./UPDATED_Data/new/new_emails/` + new_file_path + `.json`
-      )
-    );
-  } catch {}
+
+  var data = eval(
+    readTextFile(
+      // `updated_network_data/emails
+      `./UPDATED_Data/new/new_emails/` + new_file_path + `.json`
+    )
+  );
+
   // console.log(Object.keys(data).length);
   current_info = read_current_project_info();
 
-  var running_threshold = Math.floor(current_info.num_emails / 100);
+  var running_threshold = Math.ceil(current_info.num_emails / 100);
   console.log(running_threshold);
   data = reduce_the_emails(data, running_threshold);
   // console.log(Object.keys(data).length);

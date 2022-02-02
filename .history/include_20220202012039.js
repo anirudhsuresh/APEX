@@ -30,7 +30,7 @@ function UpdateprojectInfo() {
     )
   );
   // console.log(to_from_info);
-
+  console.log(to_from_info.length);
   // document.getElementById("MaxIncubation").max =;
   var to_dates = to_from_info[curr_month];
   Actual_change(email_info, commit_info, project_info, to_dates);

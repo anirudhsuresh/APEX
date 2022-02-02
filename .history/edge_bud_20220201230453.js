@@ -18,7 +18,7 @@ function UpdateEmailNet() {
   var curr_month = document.getElementById("Month").value;
   var new_file_path = alias_to_name[this_project] + "_" + curr_month;
   try {
-    var data = JSON.parse(
+    var data = eval(
       readTextFile(
         // `updated_network_data/emails
         `./UPDATED_Data/new/new_emails/` + new_file_path + `.json`

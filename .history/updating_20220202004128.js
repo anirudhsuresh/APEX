@@ -12,7 +12,7 @@ function updateAll() {
 
   // window.alert(name_to_id[this_project], forceProperties.selected_data.project);
   // agg_slider();
-  // make_chart();
+  make_chart();
   $("#chk").prop("checked", false);
   $("#make_range_slider").prop("checked", false);
   $("#hideableDiv").hide();

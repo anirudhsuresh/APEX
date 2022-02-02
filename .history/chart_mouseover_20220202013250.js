@@ -85,7 +85,6 @@ function draw(link) {
       d.date = +d.date;
       d.close = +d.close;
     });
-    // set the incubation length
     document.getElementById("MaxIncubation").max = data.length;
 
     // scale the range of the data
