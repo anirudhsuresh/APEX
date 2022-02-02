@@ -61,11 +61,8 @@ function make_it(create_link, column_names) {
   // d3v3.json("data.json", function(data) { // loading data from server
 
   // d3v3.json("wt.json", function(data) { // loading data from server
-  d3v3.csv(`${create_link}`, function (error, data_dupli) {
-    // console.log(data);
-    var data = [
-      ...new Map(data_dupli.map((o) => [JSON.stringify(o), o])).values(),
-    ];
+  d3v3.csv(`${create_link}`, function (error, data) {
+    console.log(data);
     if (typeof data == "undefined") {
       // console.log("Yes its working ?");
       data = [
