@@ -16,7 +16,7 @@ function call_table_commits(actual_name) {
   var proj_name = this_project.split("[")[0].toLowerCase().trim();
   var curr_month = document.getElementById("Month").value;
 
-  // console.log(actual_name);
+  console.log(actual_name);
   var create_link =
     "./UPDATED_Data/new_monthly_commits/" +
     alias_to_name[this_project] +
@@ -56,15 +56,23 @@ function make_it_1(create_link, column_names, clicks) {
 
   var rows, row_entries, row_entries_no_anchor, row_entries_with_anchor;
 
-  d3v3.csv(`${create_link}`, function (error, data_dupli) {
+  d3v3.csv(`${create_link}`, function (error, data_old) {
     // draw table body with rows
-
-    // console.log("before", data_dupli);
     // filter out duplicates from the data set
-    var data = [
-      ...new Map(data_dupli.map((o) => [JSON.stringify(o), o])).values(),
+    var users = [
+      ...new Set(
+        data_old.map(function (d) {
+          return d.human_date_time;
+        })
+      ),
     ];
-    // console.log("after", data);
+    console.log(typeof data_old);
+    var data = users.map(function (d) {
+      return data_old.find(function (e) {
+        return e.human_date_time === d;
+      });
+    });
+
     table.append("tbody");
 
     // data bind

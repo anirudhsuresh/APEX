@@ -56,15 +56,18 @@ function make_it_1(create_link, column_names, clicks) {
 
   var rows, row_entries, row_entries_no_anchor, row_entries_with_anchor;
 
-  d3v3.csv(`${create_link}`, function (error, data_dupli) {
+  d3v3.csv(`${create_link}`, function (error, data) {
     // draw table body with rows
-
-    // console.log("before", data_dupli);
     // filter out duplicates from the data set
-    var data = [
-      ...new Map(data_dupli.map((o) => [JSON.stringify(o), o])).values(),
-    ];
-    // console.log("after", data);
+
+    var occ = [];
+    data.filter(function (x) {
+      if (occ[x.human_date_time]) return false;
+      occ[x.human_date_time] = true;
+      return true;
+    });
+
+    console.log(occ);
     table.append("tbody");
 
     // data bind

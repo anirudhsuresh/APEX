@@ -16,7 +16,7 @@ function call_table_commits(actual_name) {
   var proj_name = this_project.split("[")[0].toLowerCase().trim();
   var curr_month = document.getElementById("Month").value;
 
-  // console.log(actual_name);
+  console.log(actual_name);
   var create_link =
     "./UPDATED_Data/new_monthly_commits/" +
     alias_to_name[this_project] +
@@ -25,6 +25,14 @@ function call_table_commits(actual_name) {
     "/" +
     actual_name +
     ".csv";
+  // "UPDATED_Data/new_monthly_data/commits/" +
+  // proj_name +
+  // "/" +
+  // actual_name +
+  // "_" +
+  // curr_month +
+  // ".csv";
+  // console.log(create_link);
 
   // UPDATED_Data/NEW_monthly_commits/+proj_name +curr_month+'/'+actual_name+".csv";
   var column_names = ["URL", "Date Time"];
@@ -55,16 +63,13 @@ function make_it_1(create_link, column_names, clicks) {
     });
 
   var rows, row_entries, row_entries_no_anchor, row_entries_with_anchor;
+  // d3v3.json("data.json", function(data) { // loading data from server
 
-  d3v3.csv(`${create_link}`, function (error, data_dupli) {
+  // d3v3.json("wt.json", function(data) { // loading data from server
+
+  d3v3.csv(`${create_link}`, function (error, data) {
     // draw table body with rows
 
-    // console.log("before", data_dupli);
-    // filter out duplicates from the data set
-    var data = [
-      ...new Map(data_dupli.map((o) => [JSON.stringify(o), o])).values(),
-    ];
-    // console.log("after", data);
     table.append("tbody");
 
     // data bind
@@ -374,3 +379,4 @@ function make_it_1(create_link, column_names, clicks) {
     }); // end of click listeners
   });
 }
+// d3v3.select(self.frameElement).style("height", "780px").style("width", "1150px");

@@ -58,13 +58,13 @@ function make_it_1(create_link, column_names, clicks) {
 
   d3v3.csv(`${create_link}`, function (error, data_dupli) {
     // draw table body with rows
-
-    // console.log("before", data_dupli);
     // filter out duplicates from the data set
+    console.log("before", data_dupli);
+    console.log("after", data);
     var data = [
       ...new Map(data_dupli.map((o) => [JSON.stringify(o), o])).values(),
     ];
-    // console.log("after", data);
+
     table.append("tbody");
 
     // data bind
