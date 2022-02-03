@@ -1,9 +1,3 @@
-// here we read the projects information and then update the various HTML elements
-// first we read the email info
-// next the commit info
-// project information
-// this provides commit stats , email stats and project information details
-
 function UpdateprojectInfo() {
   var this_project = document.getElementById("txt_ide").value;
   var curr_month = document.getElementById("Month").value;
@@ -35,9 +29,35 @@ function UpdateprojectInfo() {
       `./UPDATED_Data/new/new_month_intervals/${alias_to_name[this_project]}.json`
     )
   );
+  // console.log(to_from_info);
 
+  // document.getElementById("MaxIncubation").max =;
   var to_dates = to_from_info[curr_month];
   Actual_change(email_info, commit_info, project_info, to_dates);
+}
+
+function read_current_project_info() {
+  var this_project = document.getElementById("txt_ide").value;
+  var curr_month = document.getElementById("Month").value;
+  var new_file_path = alias_to_name[this_project] + "_" + curr_month;
+
+  email_info = JSON.parse(
+    readTextFile(`./UPDATED_Data/new/email_measures/${new_file_path}.json`)
+  );
+
+  return email_info;
+}
+
+function read_current_project_info1() {
+  var this_project = document.getElementById("txt_ide").value;
+  var curr_month = document.getElementById("Month").value;
+  var new_file_path = alias_to_name[this_project] + "_" + curr_month;
+
+  commit_info = JSON.parse(
+    readTextFile(`./UPDATED_Data/new/commits_measure/${new_file_path}.json`)
+  );
+
+  return commit_info;
 }
 
 function Actual_change(email_info, commit_info, project_info, to_dates) {
