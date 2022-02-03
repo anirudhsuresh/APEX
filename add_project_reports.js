@@ -20,24 +20,6 @@ function readTextFile1(file) {
   return allText;
 }
 
-// function readTextFile(file) {
-//   var rawFile = new XMLHttpRequest();
-//   rawFile.open("GET", file, false); // using synchronous call
-//   var allText;
-//   rawFile.onload = function () {
-//     if (rawFile.status != 404) {
-//       // analyze HTTP status of the response
-//       allText = rawFile.responseText; // e.g. 404: Not Found
-//     } else {
-//       // show the result
-//       allText = "No Data";
-//     }
-//   };
-
-//   rawFile.send(null);
-//   return allText;
-// }
-
 function getMonth() {
   var this_month = document.getElementById("Month").value;
   // var name_to_id = readTextFile("name_to_ids.json");
