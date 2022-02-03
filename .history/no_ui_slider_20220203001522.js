@@ -56,7 +56,7 @@ function agg_slider() {
     parseInt(current_date_range[0]),
     parseInt(current_date_range[1])
   ); // this gets us the current range needed
-  // console.log("the array range", array_date_range);
+  console.log("the array range", array_date_range);
 
   k = create_new_data(array_date_range);
 
@@ -88,7 +88,7 @@ function get_all_data_for_net() {
   );
   create_new_data_force_net(array_date_range);
 }
-// update the maximum of the range slider
+
 function updateSliderRange(min, max) {
   html5Slider.noUiSlider.updateOptions({
     range: {
