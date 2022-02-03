@@ -1,5 +1,3 @@
-// array d can be edited to edit the HTML selector of projects
-// this file created the projects selector
 var d = [
   "Select a project here :)",
   "Ace [graduated]",
@@ -278,20 +276,18 @@ var d = [
 ];
 
 var select = document.getElementById("txt_ide");
-//  for every element in the array we create options for the HTML select tag
+
 for (var i = 0; i < d.length; i++) {
   var opt = document.createElement("option");
   opt.textContent = d[i];
   select.appendChild(opt);
 }
 
-// if ($("#chk").is(":checked")) console.log("checked");
-// else {
-//   console.log("unchecked");
-// }
+if ($("#chk").is(":checked")) console.log("checked");
+else {
+  console.log("unchecked");
+}
 
-// we have the function for the open parallel window button
-//  here we need to edit in case we want the link to point elsewhere
 function openWin() {
   window.open("https://anirudhsuresh.github.io/APEX/");
 }
