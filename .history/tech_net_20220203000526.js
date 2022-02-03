@@ -1,4 +1,7 @@
 function UpdateTechnicalNet() {
+  // var margin = { top: 1.25, right: 1.25, bottom: 1.25, left: 1.25 };
+  // var width = 1.25 - margin.left - margin.right;
+  // var height = 1.25 - margin.top - margin.bottom;
   var svg = d3
     .select("#rightsvg")
     .attr("width", "100%")
@@ -102,17 +105,23 @@ function UpdateTechnicalNet() {
             .attr("fill", "black")
             .style("font-size", "14px");
 
+          // console.log(data[0][0])
           function clixked(d) {
             var nodeTextS;
             nodeTextS = d;
             const namesS = [];
             var f = d3.select(this);
 
+            // var commiter_name = f.text();
+            // console.log(f.text().split("*")[0]);
+            // var final_committer = f.text().split("*")[0];
+            // console.log(d.key);
             var cur_month = document.getElementById("Month").value;
             // document.getElementById("current_node1").innerHTML = final_committer;
             document.getElementById("current_node1").innerHTML = d.key;
             var cur_person = d.key;
-
+            // console.log(this_project, cur_month, cur_person);
+            // work on the committer name
             var actual_name = cur_person
               .toLowerCase()
               .replace(/[^a-zA-Z0-9]/g, " ")
@@ -133,6 +142,7 @@ function UpdateTechnicalNet() {
 
           function mouseover(d) {
             d3.select(this).attr("font-weight", "bold");
+            // d3.select(this).style("fill", "red");
             bp.mouseover(d);
             g.selectAll(".mainBars")
               .select(".perc")
