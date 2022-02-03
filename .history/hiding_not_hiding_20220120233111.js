@@ -1,4 +1,4 @@
-//  file to toggle the range slider and enable all elemts to update
+//  to toggle the range slider
 
 $("#hideableDiv").hide();
 
