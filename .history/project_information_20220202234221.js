@@ -118,21 +118,21 @@ function commit_aggregate(commit_info) {
 }
 
 $("#chk").prop("checked", false);
-//
-function UpdateMaxIncubation() {
-  var slider = document.getElementById("MaxIncubation");
 
-  slider.max = project_info.incubation_time;
-  slider.min = 1;
-  slider.value = slider.min;
+// function UpdateMaxIncubation() {
+//   var slider = document.getElementById("MaxIncubation");
 
-  document.getElementById("Month").innerHTML =
-    '<output id="Month">' + slider.min + "</output>";
+//   slider.max = project_info.incubation_time;
+//   slider.min = 1;
+//   slider.value = slider.min;
 
-  var max_time = parseInt(project_info.incubation_time);
+//   document.getElementById("Month").innerHTML =
+//     '<output id="Month">' + slider.min + "</output>";
 
-  updateSliderRange(1, max_time);
-}
-function update_month_id(the_current_month) {
-  document.getElementById("Month").innerHTML = the_current_month;
-}
+//   var max_time = parseInt(project_info.incubation_time);
+
+//   updateSliderRange(1, max_time);
+// }
+// function update_month_id(the_current_month) {
+//   document.getElementById("Month").innerHTML = the_current_month;
+// }

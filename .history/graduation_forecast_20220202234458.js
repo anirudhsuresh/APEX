@@ -1,16 +1,17 @@
 // make the graduation forecast
 function make_chart() {
   var this_project = document.getElementById("txt_ide").value;
-  // read data
+
+  // var new_name = this_project.split("[")[0].toLowerCase().replace(/ /g, "");
   var link =
     "UPDATED_Data/new/new_forecast/" +
     alias_to_name[this_project] +
     "_" +
     "f_data.csv";
   d3.select("#my_dataviz").html(null);
-  // clear contents of the node
+
   clear_content_of_current_node();
-  // draw the graduation forecast
+
   draw(link);
 }
 
@@ -160,6 +161,7 @@ function draw(link) {
       .text("Forecast Value");
 
     // x axis
+
     svg
       .append("text")
       .attr("x", width - 50)
@@ -170,6 +172,14 @@ function draw(link) {
       .style("text-anchor", "middle")
       .text("Months");
 
+    //   svg.append("g")
+    //       .attr("transform", "translate(0," + height + ")")
+    //       .call(d3.axisBottom(x));
+
+    //   // add the Y Axis
+    //   svg.append("g")
+    //       .call(d3.axisLeft(y));
+    // //
     // append the x line
     focus
       .append("line")
@@ -190,6 +200,12 @@ function draw(link) {
       .attr("x1", width)
       .attr("x2", width);
 
+    //
+
+    //      .on('click', function(d, i) {
+    //         console.log("click", d);
+    //       })
+
     // append the circle at the intersection               // **********
     focus
       .append("circle") // **********
@@ -205,7 +221,8 @@ function draw(link) {
       .attr("height", height) // **********
       .style("fill", "none") // **********
       .style("pointer-events", "all") // **********
-
+      // .on("mouseover", function() { focus.style("display", null); })
+      // .on("mouseout", function() { focus.style("display", "none"); })
       .on("mousemove", mousemove);
     // **********
 
@@ -237,7 +254,7 @@ function draw(link) {
       })
       .on("click", mouseclick)
       .on("mousemove", mousemove);
-    // on mouseclick function when we click on the red dot on the graduation forecast
+
     function mouseclick() {
       var x0 = x.invert(d3.mouse(this)[0]),
         i = bisectDate(data, x0, 1),
@@ -248,14 +265,18 @@ function draw(link) {
       make_this_happen(d.date);
       changeSize2(d.date);
       make_line(d.date);
+      // remove_circles();
+      // update_dots(d.date - 1);
+      // update_dots(d.date - 1);
     }
-    // when hovering over the graduation forecast
+
     function mousemove() {
       var x0 = x.invert(d3.mouse(this)[0]),
         i = bisectDate(data, x0, 1),
         d0 = data[i - 1],
         d1 = data[i],
         d = x0 - d0.date > d1.date - x0 ? d1 : d0;
+      // console.log(x0);
 
       focus
         .select("circle.y")
@@ -294,7 +315,7 @@ function draw(link) {
         .attr("transform", "translate(" + width * -1 + "," + y(d.close) + ")")
         .attr("x2", width + width);
     } // **********
-    //  red dot and how it should change once we mouseclick and update the months
+    //  red dot
     var data1 = [data[0]];
     var theCircle = svg
       .append("circle")
@@ -402,6 +423,9 @@ function draw(link) {
 }
 
 function make_this_happen(dates_fed) {
+  // console.log(dates_fed);
+  // document.getElementsByClassName("month_name").innerHTML = dates_fed;
+
   update_month_id(dates_fed);
   forceProperties.selected_data.month = dates_fed;
   getMonth();

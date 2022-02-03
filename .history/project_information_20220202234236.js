@@ -118,7 +118,7 @@ function commit_aggregate(commit_info) {
 }
 
 $("#chk").prop("checked", false);
-//
+
 function UpdateMaxIncubation() {
   var slider = document.getElementById("MaxIncubation");
 
