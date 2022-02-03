@@ -131,7 +131,7 @@ function UpdateEmailNet() {
       .toLowerCase()
       .replace(/[^a-zA-Z0-9]/g, " ")
       .trim();
-
+    // console.log(actual_name);
     // dynamically updating the titles of the popovers
     var actual_title =
       "Emails sent by" +
@@ -142,14 +142,13 @@ function UpdateEmailNet() {
       " " +
       cur_month;
 
-    // set the title of the email popover link
     document.getElementById("inside_title").innerHTML = actual_title;
-    // call the function to read the current developers email links
     call_table_emails(actual_name);
   }
 
   function mouseover(d) {
-    d3.select(this).attr("font-weight", "bold"); // make the current dev bold
+    d3.select(this).attr("font-weight", "bold");
+
     bp.mouseover(d);
     g.selectAll(".mainBars")
       .select(".perc")

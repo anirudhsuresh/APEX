@@ -1,9 +1,7 @@
-// function to create social network
-
 var color = d3.scaleOrdinal(d3.schemeCategory20c);
+//UpdateTechnicalNet()
 
 function UpdateEmailNet() {
-  // select svg element
   var svg = d3
     .select("#middlesvg")
     .attr("width", "100%")
@@ -15,13 +13,11 @@ function UpdateEmailNet() {
 
   svg.selectAll("*").remove();
 
-  // var new_name = this_project.split("[")[0].toLowerCase().replace(/ /g, "");
   var this_project = document.getElementById("txt_ide").value;
+  var new_name = this_project.split("[")[0].toLowerCase().replace(/ /g, "");
   var curr_month = document.getElementById("Month").value;
   var new_file_path = alias_to_name[this_project] + "_" + curr_month;
-
   try {
-    // read the data file
     var data = JSON.parse(
       readTextFile(
         // `updated_network_data/emails
@@ -30,14 +26,12 @@ function UpdateEmailNet() {
     );
   } catch {}
   // console.log(Object.keys(data).length);
-
-  // read the current info to calculate the threshold
   current_info = read_current_project_info();
-  var running_threshold = Math.floor(current_info.num_emails / 100);
-  // calculate the threshold and then reduce the data to ensure there are no zeros
-  data = reduce_the_emails(data, running_threshold);
 
-  // bi partile graph
+  var running_threshold = Math.floor(current_info.num_emails / 100);
+  console.log(running_threshold);
+  data = reduce_the_emails(data, running_threshold);
+  // console.log(Object.keys(data).length);
   var bp = viz
     .bP()
     .data(data)
@@ -80,12 +74,12 @@ function UpdateEmailNet() {
 
   // effect on the bars on hover , click etc
   g.selectAll(".mainBars")
-    .on("mouseover", mouseover) // on mouse over
-    .on("mouseout", mouseout) // on moving out
-    .on("click", clixked); // on clicking on developers
+    .on("mouseover", mouseover)
+    .on("mouseout", mouseout)
+    .on("click", clixked);
 
   //  the text on the bars and the percentages
-  // text elements
+
   g.selectAll(".mainBars")
     .append("text")
     .attr("class", "label")
@@ -97,7 +91,6 @@ function UpdateEmailNet() {
     .attr("text-anchor", (d) => (d.part == "primary" ? "end" : "start"))
     .style("font-size", "14px");
 
-  // percentages
   g.selectAll(".mainBars")
     .append("text")
     .attr("class", "perc")
@@ -111,7 +104,6 @@ function UpdateEmailNet() {
     .style("font-size", "14px");
   // 23:-20))
 
-  // on clicking function
   function clixked(d) {
     var nodeTextS;
     nodeTextS = d;
@@ -120,18 +112,21 @@ function UpdateEmailNet() {
 
     console.log(d.key);
 
-    // get the current developer
-    document.getElementById("current_node").innerHTML = d.key;
+    // commit_node
 
-    // construct the directory to find the devs file
+    document.getElementById("current_node").innerHTML = d.key;
+    // construct the dir:
+    var this_project = document.getElementById("txt_ide").value;
     var cur_month = document.getElementById("Month").value;
     var cur_person = d.key;
-    // work on the emails name
+    // console.log(this_project, cur_month, cur_person);
+    var proj_name = this_project.split("[")[0].toLowerCase().trim();
+    // work on the committer name
     var actual_name = cur_person
       .toLowerCase()
       .replace(/[^a-zA-Z0-9]/g, " ")
       .trim();
-
+    // console.log(actual_name);
     // dynamically updating the titles of the popovers
     var actual_title =
       "Emails sent by" +
@@ -142,14 +137,13 @@ function UpdateEmailNet() {
       " " +
       cur_month;
 
-    // set the title of the email popover link
     document.getElementById("inside_title").innerHTML = actual_title;
-    // call the function to read the current developers email links
     call_table_emails(actual_name);
   }
 
   function mouseover(d) {
-    d3.select(this).attr("font-weight", "bold"); // make the current dev bold
+    d3.select(this).attr("font-weight", "bold");
+
     bp.mouseover(d);
     g.selectAll(".mainBars")
       .select(".perc")
