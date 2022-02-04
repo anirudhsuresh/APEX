@@ -11,6 +11,7 @@ function create_for(feed_size) {
         `./UPDATED_Data/new/email_measures/${alias_to_name[this_project]}_${cur_month}.json`
       )
     );
+    fixes;
 
     sub_array.push(projectInfo);
   }
@@ -69,12 +70,12 @@ function create_for_commits(feed_size) {
   return threshold;
 }
 
-var dataf1;
-function get_the_data(common_path) {
-  d3.json(`${common_path}`, function (error, dataf) {
-    dataf1 = dataf;
-  });
-}
+// var dataf1;
+// function get_the_data(common_path) {
+//   d3.json(`${common_path}`, function (error, dataf) {
+//     dataf1 = dataf;
+//   });
+// }
 
 function give_the_data() {
   var t = dataf1;

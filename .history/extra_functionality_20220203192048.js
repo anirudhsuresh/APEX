@@ -11,6 +11,7 @@ function create_for(feed_size) {
         `./UPDATED_Data/new/email_measures/${alias_to_name[this_project]}_${cur_month}.json`
       )
     );
+    fixes;
 
     sub_array.push(projectInfo);
   }
