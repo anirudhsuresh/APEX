@@ -26,7 +26,7 @@ function getMonth() {
   return this_month;
 }
 
-function make_reports() {
+function make_reports {
   var name_to_id = JSON.parse(readTextFile("name_to_ids.json"));
   var this_project = document.getElementById("txt_ide").value;
   var alias_to_name = JSON.parse(readTextFile("new_name_to_alias.json"));

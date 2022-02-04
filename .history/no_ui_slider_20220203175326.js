@@ -27,7 +27,7 @@ function on_start() {
   );
   var th = create_for(array_date_range);
   // console.log(th);
-  aggregate__network_stats(th);
+ aggregate__network_stats(th);
 }
 
 // noUiSlider event when the slide changes
@@ -39,7 +39,7 @@ html5Slider.noUiSlider.on("change", function (values, handle) {
     parseInt(current_date_range[1])
   );
 
-  aggregate__network_stats();
+ aggregate__network_stats();
 });
 // find range of dates currently selected
 function range(start, end) {
@@ -48,7 +48,7 @@ function range(start, end) {
     .map((_, idx) => start + idx);
 }
 
-function aggregate__network_stats() {
+functionaggregate__network_stats() {
   //  it comes here once you click the checkbox
   var current_date_range = html5Slider.noUiSlider.get();
   console.log(current_date_range);
