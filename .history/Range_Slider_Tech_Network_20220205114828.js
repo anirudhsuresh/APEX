@@ -104,18 +104,29 @@ function Update_Tech_Range_Slider(input_data) {
     const namesS = [];
     var f = d3.select(this);
 
+    console.log(d.key);
+    console.log(Object.keys(g));
+    console.log(d3.select(this));
+
+    // commit_node
+
+    document.getElementById("current_node").innerHTML = d.key;
+    // construct the dir:
+    var this_project = document.getElementById("txt_ide").value;
     var cur_month = document.getElementById("Month").value;
-    // document.getElementById("current_node1").innerHTML = final_committer;
-    document.getElementById("current_node1").innerHTML = d.key;
     var cur_person = d.key;
-
-    var actual_name = cur_person
-      .toLowerCase()
-      .replace(/[^a-zA-Z0-9]/g, " ")
-      .trim();
-
+    // console.log(this_project, cur_month, cur_person);
+    var proj_name = this_project.split("[")[0].toLowerCase().trim();
+    // work on the committer name
+    // var actual_name = cur_person
+    //   .toLowerCase()
+    //   .replace(/[^a-zA-Z0-9]/g, " ")
+    //   .trim();
+    // // console.log(actual_name);
+    // // dynamically updating the titles of the popovers
+    var actual_name = d.key;
     var actual_title =
-      "Commits made by" +
+      "Emails sent by" +
       " " +
       actual_name +
       " " +

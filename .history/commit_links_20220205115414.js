@@ -64,7 +64,7 @@ function make_it_1(create_link, column_names, clicks) {
     var data = [
       ...new Map(data_dupli.map((o) => [JSON.stringify(o), o])).values(),
     ];
-    console.log("after", data);
+    // console.log("after", data);
     table.append("tbody");
 
     // data bind

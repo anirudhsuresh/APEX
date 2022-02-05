@@ -122,7 +122,7 @@ function Update_Tech_Range_Slider(input_data) {
       "during month" +
       " " +
       cur_month;
-
+    console.log(cur_person);
     document.getElementById("inside_title1").innerHTML = actual_title;
     call_table_commits(cur_person);
   }

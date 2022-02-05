@@ -25,7 +25,7 @@ function call_table_commits(actual_name) {
     "/" +
     actual_name +
     ".csv";
-  console.log(create_link);
+
   // UPDATED_Data/NEW_monthly_commits/+proj_name +curr_month+'/'+actual_name+".csv";
   var column_names = ["URL", "Date Time"];
   // var column_names = ["Title","Views","Time","URL","Next boy"];0
@@ -59,12 +59,12 @@ function make_it_1(create_link, column_names, clicks) {
   d3v3.csv(`${create_link}`, function (error, data_dupli) {
     // draw table body with rows
 
-    console.log("before", data_dupli);
+    // console.log("before", data_dupli);
     // filter out duplicates from the data set
     var data = [
       ...new Map(data_dupli.map((o) => [JSON.stringify(o), o])).values(),
     ];
-    console.log("after", data);
+    // console.log("after", data);
     table.append("tbody");
 
     // data bind
