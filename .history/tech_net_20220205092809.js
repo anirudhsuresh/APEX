@@ -26,12 +26,12 @@ function UpdateTechnicalNet() {
           data = d;
 
           current_info = read_current_project_commits();
-          // console.log("before ", current_info.num_commits);
+          console.log("before ", current_info.num_commits);
 
           var running_threshold = Math.ceil(current_info.num_commits / 100);
           // var running_threshold = Math.floor(current_info.num_commits / 100);
           console.log("tech th", running_threshold);
-          var data = reduce_the_commits(data);
+          var data = reduce_the_commits(data, running_threshold);
           console.log("after ", data);
           var g = svg.append("g").attr("transform", "translate(185,45)");
 

@@ -7,6 +7,7 @@
 function UpdateprojectInfo() {
   var this_project = document.getElementById("txt_ide").value;
   var curr_month = document.getElementById("Month").value;
+  // console.log(curr_month);
   var new_file_path = alias_to_name[this_project] + "_" + curr_month;
   try {
     email_info = JSON.parse(

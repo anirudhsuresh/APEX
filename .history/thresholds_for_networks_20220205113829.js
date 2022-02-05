@@ -46,11 +46,11 @@ function reduce_the_emails(input_array) {
 function reduce_the_commits(input_array) {
   // current_info = read_current_project_commits();
   current_sum = commit_calculate(input_array);
-
-  if (current_sum < 100) {
+  console.log("im here ", current_sum);
+  if (current_info.num_commits < 100) {
     threshold = 0;
   } else {
-    threshold = Math.ceil(current_sum / 100);
+    threshold = Math.ceil(current_info.num_commits / 100);
   }
   // console.log(current_info.num_commits);
   new_array = [];

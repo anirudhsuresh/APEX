@@ -1,7 +1,9 @@
-// similar function to social network but for the range slider
+// function to create social network
+
 var color = d3.scaleOrdinal(d3.schemeCategory20c);
 
-function Update_Email_Range_Slider(input_data) {
+function UpdateEmailNet() {
+  // select svg element
   var svg = d3
     .select("#middlesvg")
     .attr("width", "100%")
@@ -13,17 +15,31 @@ function Update_Email_Range_Slider(input_data) {
 
   svg.selectAll("*").remove();
 
-  var data = input_data;
+  // var new_name = this_project.split("[")[0].toLowerCase().replace(/ /g, "");
+  var this_project = document.getElementById("txt_ide").value;
+  var curr_month = document.getElementById("Month").value;
+  var new_file_path = alias_to_name[this_project] + "_" + curr_month;
 
-  // current_info = read_current_project_info();
-  // console.log(data);
-  var res = 0;
-  data.forEach((a) => (res += parseInt(a[2])));
+  try {
+    // read the data file
+    var data = JSON.parse(
+      readTextFile(
+        // `updated_network_data/emails
+        `./UPDATED_Data/new/new_emails/` + new_file_path + `.json`
+      )
+    );
+  } catch {}
+  // console.log(Object.keys(data).length);
 
-  var running_threshold = Math.ceil(res / 100);
+  // read the current info to calculate the threshold
+  current_info = read_current_project_info();
 
-  data = reduce_the_emails(data);
+  var running_threshold = Math.ceil(current_info.num_emails / 100);
+  // calculate the threshold and then reduce the data to ensure there are no zeros
+  console.log("social th", running_threshold, current_info.num_emails);
+  data = reduce_the_emails(data, running_threshold);
 
+  // bi partible graph
   var bp = viz
     .bP()
     .data(data)
@@ -32,7 +48,8 @@ function Update_Email_Range_Slider(input_data) {
     .height(250)
     .width(350)
     .barSize(20)
-
+    .edgeOpacity(0.6)
+    // .edgeMode("straight") //makes it looks a little better
     .fill((d) => color(d.primary));
 
   var g = svg.append("g").attr("transform", "translate(195,45)");
@@ -65,12 +82,12 @@ function Update_Email_Range_Slider(input_data) {
 
   // effect on the bars on hover , click etc
   g.selectAll(".mainBars")
-    .on("mouseover", mouseover)
-    .on("mouseout", mouseout)
-    .on("click", clixked);
+    .on("mouseover", mouseover) // on mouse over
+    .on("mouseout", mouseout) // on moving out
+    .on("click", clixked); // on clicking on developers
 
   //  the text on the bars and the percentages
-
+  // text elements
   g.selectAll(".mainBars")
     .append("text")
     .attr("class", "label")
@@ -82,6 +99,7 @@ function Update_Email_Range_Slider(input_data) {
     .attr("text-anchor", (d) => (d.part == "primary" ? "end" : "start"))
     .style("font-size", "14px");
 
+  // percentages
   g.selectAll(".mainBars")
     .append("text")
     .attr("class", "perc")
@@ -95,6 +113,7 @@ function Update_Email_Range_Slider(input_data) {
     .style("font-size", "14px");
   // 23:-20))
 
+  // on clicking function
   function clixked(d) {
     var nodeTextS;
     nodeTextS = d;
@@ -102,24 +121,19 @@ function Update_Email_Range_Slider(input_data) {
     var f = d3.select(this);
 
     console.log(d.key);
-    console.log(Object.keys(g));
-    console.log(d3.select(this));
 
-    // commit_node
-
+    // get the current developer
     document.getElementById("current_node").innerHTML = d.key;
-    // construct the dir:
-    var this_project = document.getElementById("txt_ide").value;
+
+    // construct the directory to find the devs file
     var cur_month = document.getElementById("Month").value;
     var cur_person = d.key;
-    // console.log(this_project, cur_month, cur_person);
-    var proj_name = this_project.split("[")[0].toLowerCase().trim();
-    // work on the committer name
+    // work on the emails name
     var actual_name = cur_person
       .toLowerCase()
       .replace(/[^a-zA-Z0-9]/g, " ")
       .trim();
-    // console.log(actual_name);
+
     // dynamically updating the titles of the popovers
     var actual_title =
       "Emails sent by" +
@@ -130,13 +144,14 @@ function Update_Email_Range_Slider(input_data) {
       " " +
       cur_month;
 
+    // set the title of the email popover link
     document.getElementById("inside_title").innerHTML = actual_title;
+    // call the function to read the current developers email links
     call_table_emails(actual_name);
   }
 
   function mouseover(d) {
-    d3.select(this).attr("font-weight", "bold");
-
+    d3.select(this).attr("font-weight", "bold"); // make the current dev bold
     bp.mouseover(d);
     g.selectAll(".mainBars")
       .select(".perc")

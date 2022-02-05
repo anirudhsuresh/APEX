@@ -1,9 +1,11 @@
-// similar function to social network but for the range slider
-var color = d3.scaleOrdinal(d3.schemeCategory20c);
+// similar function to tech network but for the range slider
 
-function Update_Email_Range_Slider(input_data) {
+var color = d3.scaleOrdinal(d3.schemeCategory20c);
+//UpdateTechnicalNet()
+
+function Update_Tech_Range_Slider(input_data) {
   var svg = d3
-    .select("#middlesvg")
+    .select("#rightsvg")
     .attr("width", "100%")
     .attr("height", "100%")
     .attr("preserveAspectRatio", "xMinYMin meet")
@@ -15,14 +17,14 @@ function Update_Email_Range_Slider(input_data) {
 
   var data = input_data;
 
-  // current_info = read_current_project_info();
-  // console.log(data);
+  current_info = read_current_project_info();
+
   var res = 0;
   data.forEach((a) => (res += parseInt(a[2])));
 
   var running_threshold = Math.ceil(res / 100);
 
-  data = reduce_the_emails(data);
+  data = reduce_the_commits(data);
 
   var bp = viz
     .bP()
@@ -32,7 +34,8 @@ function Update_Email_Range_Slider(input_data) {
     .height(250)
     .width(350)
     .barSize(20)
-
+    // .edgeOpacity(0.6)
+    // .edgeMode("straight") //makes it looks a little better
     .fill((d) => color(d.primary));
 
   var g = svg.append("g").attr("transform", "translate(195,45)");
@@ -115,12 +118,13 @@ function Update_Email_Range_Slider(input_data) {
     // console.log(this_project, cur_month, cur_person);
     var proj_name = this_project.split("[")[0].toLowerCase().trim();
     // work on the committer name
-    var actual_name = cur_person
-      .toLowerCase()
-      .replace(/[^a-zA-Z0-9]/g, " ")
-      .trim();
-    // console.log(actual_name);
-    // dynamically updating the titles of the popovers
+    // var actual_name = cur_person
+    //   .toLowerCase()
+    //   .replace(/[^a-zA-Z0-9]/g, " ")
+    //   .trim();
+    // // console.log(actual_name);
+    // // dynamically updating the titles of the popovers
+    var actual_name = d.key;
     var actual_title =
       "Emails sent by" +
       " " +
@@ -131,7 +135,7 @@ function Update_Email_Range_Slider(input_data) {
       cur_month;
 
     document.getElementById("inside_title").innerHTML = actual_title;
-    call_table_emails(actual_name);
+    call_table_commits(actual_name);
   }
 
   function mouseover(d) {

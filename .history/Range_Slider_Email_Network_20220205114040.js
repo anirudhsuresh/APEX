@@ -15,8 +15,8 @@ function Update_Email_Range_Slider(input_data) {
 
   var data = input_data;
 
-  // current_info = read_current_project_info();
-  // console.log(data);
+  current_info = read_current_project_info();
+  console.log(data);
   var res = 0;
   data.forEach((a) => (res += parseInt(a[2])));
 

@@ -1,12 +1,12 @@
 function reduce_the_emails(input_array) {
-  // current_info = read_current_project_emails();
+  current_info = read_current_project_emails();
+  if (current_info.num_emails < 100) {
+    threshold = 0
+  } else { threshold=var threshold = Math.ceil(current_info.num_emails / 100);}
 
-  current_sum = email_calculate(input_array);
-  if (current_sum < 100) {
-    threshold = 0;
-  } else {
-    threshold = Math.ceil(current_sum / 100);
-  }
+  
+  
+  
 
   new_array = [];
   input_array.forEach((a) => {
@@ -43,16 +43,7 @@ function reduce_the_emails(input_array) {
   return new_array;
 }
 
-function reduce_the_commits(input_array) {
-  // current_info = read_current_project_commits();
-  current_sum = commit_calculate(input_array);
-
-  if (current_sum < 100) {
-    threshold = 0;
-  } else {
-    threshold = Math.ceil(current_sum / 100);
-  }
-  // console.log(current_info.num_commits);
+function reduce_the_commits(input_array, threshold) {
   new_array = [];
   input_array.forEach((a) => {
     if (a[2] > threshold) {
@@ -81,23 +72,4 @@ function reduce_the_commits(input_array) {
     Math.floor(commit_per_dev);
 
   return new_array;
-}
-
-function email_calculate(new_array) {
-  num_e = [];
-  num_emails = [];
-  new_array.forEach((a) => {
-    num_e.push(parseInt(a[2]));
-    num_emails = num_e.reduce((a, b) => a + b, 0);
-  });
-  return num_emails;
-}
-
-function commit_calculate(new_array) {
-  var num_e = [];
-  new_array.forEach((a) => {
-    num_e.push(parseInt(a[2]));
-    num_commits = num_e.reduce((a, b) => a + b, 0);
-  });
-  return num_commits;
 }
