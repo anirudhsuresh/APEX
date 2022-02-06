@@ -7,12 +7,8 @@
 function UpdateprojectInfo() {
   var this_project = document.getElementById("txt_ide").value;
   var curr_month = document.getElementById("Month").value;
-
   var new_file_path = alias_to_name[this_project] + "_" + curr_month;
-  // set the months for the tech and social net
-  document.getElementById("pro_month1").innerHTML = curr_month;
   document.getElementById("pro_month").innerHTML = curr_month;
-
   try {
     email_info = JSON.parse(
       readTextFile(`./UPDATED_Data/new/email_measures/${new_file_path}.json`)

@@ -33,12 +33,7 @@
     display: block;
 }  */
 
-.noUi-tooltip {
-    display: none;
-}
-.noUi-active .noUi-tooltip {
-    display: block;
-}
+
 .noUi-background {
     height: 16px;
 }

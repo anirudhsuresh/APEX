@@ -42,10 +42,6 @@ html5Slider.noUiSlider.on("change", function (values, handle) {
     parseInt(current_date_range[0]),
     parseInt(current_date_range[1])
   );
-  document.getElementById("pro_month1").innerHTML =
-    parseInt(current_date_range[0]) + "~" + parseInt(current_date_range[1]);
-  document.getElementById("pro_month").innerHTML =
-    parseInt(current_date_range[0]) + "~" + parseInt(current_date_range[1]);
 
   aggregate__network_stats();
 });
