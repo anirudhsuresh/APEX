@@ -26,12 +26,13 @@ function on_start() {
     parseInt(current_date_range[1])
   );
   var th = create_for(array_date_range);
+  document.getElementById("pro_month1").innerHTML =
+    current_date_range[0] + "~" + current_date_range[1];
+  document.getElementById("pro_month").innerHTML =
+    current_date_range[0] + "~" + current_date_range[1];
+  // console.log(th);
   document.getElementById("pro_curre_months").innerHTML =
     current_date_range[0] + "~" + current_date_range[1];
-  document.getElementById("pro_month1").innerHTML =
-    parseInt(current_date_range[0]) + "~" + parseInt(current_date_range[1]);
-  document.getElementById("pro_month").innerHTML =
-    parseInt(current_date_range[0]) + "~" + parseInt(current_date_range[1]);
 
   aggregate__network_stats(th);
 }
@@ -45,7 +46,7 @@ html5Slider.noUiSlider.on("change", function (values, handle) {
     parseInt(current_date_range[1])
   );
   document.getElementById("pro_curre_months").innerHTML =
-    parseInt(current_date_range[0]) + "~" + parseInt(current_date_range[1]);
+    current_date_range[0] + "~" + current_date_range[1];
   document.getElementById("pro_month1").innerHTML =
     parseInt(current_date_range[0]) + "~" + parseInt(current_date_range[1]);
   document.getElementById("pro_month").innerHTML =

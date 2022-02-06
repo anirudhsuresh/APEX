@@ -45,7 +45,7 @@ html5Slider.noUiSlider.on("change", function (values, handle) {
     parseInt(current_date_range[1])
   );
   document.getElementById("pro_curre_months").innerHTML =
-    parseInt(current_date_range[0]) + "~" + parseInt(current_date_range[1]);
+    current_date_range[0] + "~" + current_date_range[1];
   document.getElementById("pro_month1").innerHTML =
     parseInt(current_date_range[0]) + "~" + parseInt(current_date_range[1]);
   document.getElementById("pro_month").innerHTML =
