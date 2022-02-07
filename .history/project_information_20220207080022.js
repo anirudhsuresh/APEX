@@ -59,28 +59,28 @@ function Actual_change(project_info, to_dates) {
   document.getElementById("end1").innerHTML = project_info.end_date;
   document.getElementById("intro").innerHTML = project_info.description;
 
-  // document.getElementById("num_emails").innerHTML = Math.floor(
-  //   email_info.num_emails
-  // );
+  document.getElementById("num_emails").innerHTML = Math.floor(
+    email_info.num_emails
+  );
 
-  // document.getElementById("num_senders").innerHTML = Math.floor(
-  //   email_info.num_senders.toFixed(2)
-  // );
-  // document.getElementById("email_per_dev").innerHTML = Math.floor(
-  //   email_info.email_per_dev
-  // );
+  document.getElementById("num_senders").innerHTML = Math.floor(
+    email_info.num_senders.toFixed(2)
+  );
+  document.getElementById("email_per_dev").innerHTML = Math.floor(
+    email_info.email_per_dev
+  );
   document.getElementById("reports_month").innerHTML =
     project_info.start_date + "~" + project_info.end_date;
 
-  // document.getElementById("num_commits").innerHTML = Math.floor(
-  //   commit_info.num_commits
-  // );
-  // document.getElementById("num_committers").innerHTML = Math.floor(
-  //   commit_info.num_committers
-  // );
-  // document.getElementById("commit_per_dev").innerHTML = Math.floor(
-  //   commit_info.commit_per_dev
-  // );
+  document.getElementById("num_commits").innerHTML = Math.floor(
+    commit_info.num_commits
+  );
+  document.getElementById("num_committers").innerHTML = Math.floor(
+    commit_info.num_committers
+  );
+  document.getElementById("commit_per_dev").innerHTML = Math.floor(
+    commit_info.commit_per_dev
+  );
   document.getElementById("mentor").innerHTML = project_info.mentor;
   // console.log(to_dates[0], to_dates[1]);
 

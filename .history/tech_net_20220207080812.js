@@ -19,12 +19,8 @@ function UpdateTechnicalNet() {
       `./UPDATED_Data/new/new_commit/Jan/` + new_file_path + `.json`,
       function (error, d) {
         if (error) {
-          document.getElementById("num_commits").innerHTML = 0;
-          document.getElementById("num_committers").innerHTML = 0;
-          document.getElementById("commit_per_dev").innerHTML = 0;
           svg = d3.select("#rightsvg");
           svg.selectAll("*").remove();
-
           // throw error;
         } else {
           data = d;
