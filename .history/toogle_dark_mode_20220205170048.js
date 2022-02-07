@@ -1,0 +1,9 @@
+function toggle() {
+  var el = document.getElementById("style1");
+  if (el.href.match("./styling.css")) {
+    el.href = "./styling.css";
+  } else {
+    el.href = "./dark_mode.css";
+  }
+  console.log("<link> href is now: " + el.href);
+}

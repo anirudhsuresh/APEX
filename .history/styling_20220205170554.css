@@ -1,0 +1,332 @@
+body {
+      background-color: teal;
+      /* background-color: #e74c3c; */
+      /* background-color: #b3e6ff */
+
+      /* background-color: #b3e6ff; */
+      /* background-color: ; */
+    }
+
+    /* #b3e6ff */
+
+
+
+    .main {
+
+      flex-wrap: wrap;
+
+      flex-flow: row wrap;
+      /*  */
+      background: #b3e6ff;
+
+    }
+
+
+    .box_H {
+      background-color: white;
+      margin: 1px;
+      /* padding: 8px; */
+      color: black;
+      resize: both;
+      border-radius: 1.2em;
+
+
+
+    }
+
+
+    .box {
+      background-color: white;
+      margin: 8px;
+      padding: 8px;
+      color: black;
+      resize: both;
+      border-radius: 1.2em;
+      flex-direction: column;
+      border: 1px solid black;
+      /* transition: all .6s ease-in-out;  */
+      transition: transform 400ms ease-in-out;
+      filter: drop-shadow(0.75rem 0.75rem 0.75rem #225a75);
+      /* filter: drop-shadow(0 0 0.75rem #225a75); */
+
+
+
+    }
+
+    .box1 {
+      background-color: white;
+
+      margin: 8px;
+      padding: 8px;
+      color: black;
+      border-radius: 1.2em;
+      resize: both;
+      flex-direction: column;
+      filter: drop-shadow(0.75rem 0.75rem 0.75rem #225a75);
+      /* filter: drop-shadow(0 0 0.75rem crimson); */
+      /* filter: drop-shadow(0 0 0.75rem #225a75); */
+      border: 1px solid black;
+      /* transition: all .6s ease-in-out;  */
+      /* transition: transform 750ms; */
+      /* filter: drop-shadow(0 0 0.1rem rgb(4, 73, 73)); */
+
+    }
+
+    /* margin: 2px; */
+    /* padding: 30px; */
+
+    /* .box:hover {
+      transform: scale(1.01);
+      /* transform: scale(1.9); */
+    /* filter: brightness(105%); */
+    /* backface-visibility: hidden; */
+    /* transform: translateZ(0); */
+    /* translate3d(0, 0, 0); */
+    /* -webkit-font-smoothing: antialiased; */
+    /* -webkit-font-smoothing: subpixel-antialiased; */
+    /* }  */
+
+    /* // hover */
+
+    .one {
+      display: flex;
+      height: 220px;
+
+      min-height: 220px;
+
+      /*  */
+    }
+
+    .a1 {
+      flex: 1;
+      /* padding-top: 10px; */
+    }
+
+    .a2 {
+      flex: 1;
+    }
+
+    .b {
+      flex: 1;
+
+      /* padding-top: 10px;
+      padding-left: 10px;  */
+      /* padding-bottom: 7px; */
+      /* padding-left: 10px; */
+    }
+
+    .second_pane {
+      display: flex;
+      height: 820px;
+    }
+
+    .three {
+      flex: 1;
+      /* display: flex; */
+    }
+
+    .four {
+      flex: 6;
+      display: flex;
+    }
+
+    .five {
+      flex: 2;
+    }
+
+    .six {
+      flex: 2;
+      display: flex;
+    }
+
+    .seven {
+      flex-direction: row;
+      display: flex;
+    }
+
+    .seven2 {
+      flex-direction: row;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .f {
+      flex: 1;
+      height: 122px;
+      text-align: center;
+    }
+
+    .e {
+      flex: 1;
+      height: 70px;
+      /* padding: 10px; */
+      margin-top: 12px;
+    }
+
+    .c {
+      flex: 2;
+      height: 300px;
+      /* padding: 10px; */
+      /* margin-top: 12px; */
+      overflow: auto;
+      resize: both;
+    }
+
+    .d {
+      flex: 2;
+      height: 300px;
+      margin-top: 12px;
+      /* padding: 10px; */
+      overflow: auto;
+      resize: both;
+      /* overflow-y: scroll; */
+    }
+
+
+    .d1 {
+      flex: 2;
+      height: 100px;
+      margin-top: 12px;
+      /* padding: 10px; */
+      overflow: auto;
+      resize: both;
+      /* overflow-y: scroll; */
+    }
+
+    .s {
+      flex: 2;
+      min-height: 380px;
+      /* padding-left: 10px; */
+      /* padding-top: 10px; */
+      overflow-y: scroll;
+      /* display: inline-block; */
+      /* margin: 0 auto; */
+    }
+
+    .five1 {
+      flex: 2;
+    }
+
+    .five2 {
+      flex: 2;
+      /* flex-shrink:10; */
+    }
+
+    .resize {
+      flex: 4;
+      /* padding: 15px; */
+      filter: drop-shadow(0 0 0.1rem rgb(4, 73, 73));
+    }
+
+
+    .resize1 {
+      flex: 1;
+      filter: drop-shadow(0 0 0.1rem rgb(4, 73, 73));
+      /* padding: 15px; */
+    }
+
+    .resize2 {
+      flex: 4;
+      filter: drop-shadow(0 0 0.1rem rgb(4, 73, 73));
+      /* padding: 15px; */
+    }
+
+    .resize12 {
+      flex: 1;
+      filter: drop-shadow(0 0 0.1rem rgb(4, 73, 73));
+      /* padding: 15px; */
+    }
+
+    @media (max-width: 768px) {
+
+      /*breakpoint*/
+      .one {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 768px) {
+
+      /*breakpoint*/
+      .three {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 768px) {
+
+      /*breakpoint*/
+      .second_pane {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 768px) {
+
+      /*breakpoint*/
+      .four {
+        flex-direction: column;
+      }
+    }
+
+    line {
+      stroke: grey;
+    }
+
+    .changing div {
+      font-size: 50px;
+      color: #fff;
+    }
+
+    .changing_div2 {
+      font-size: 50px;
+      color: #fff;
+
+    }
+
+
+    .one_one {
+      display: flex;
+      /* height: 180px; */
+      /* height: auto; */
+      /* width: auto; */
+      /* float: left; */
+      /* min-height: 180px; */
+    }
+
+    .one_a1 {
+      flex: 1;
+      /* min-width: 100px; */
+      height: 20px;
+
+      /* position: absolute; */
+
+      /* padding-top: 10px; */
+    }
+
+    .one_a2 {
+      flex: 1;
+
+
+    }
+
+    .box2 {
+      /* background-color: white; */
+
+      /* margin: 8px; */
+      /* padding: 8px; */
+
+      color: black;
+      /* border-radius: 1.2em; */
+      resize: both;
+      flex-direction: column;
+      /* filter: drop-shadow(0.75rem 0.75rem 0.75rem #225a75); */
+
+      /* border: 1px solid black; */
+
+    }
+
+    /* new slider */
+
+
+  
