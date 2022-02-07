@@ -13,7 +13,7 @@ function UpdateEmailNet() {
     .attr("viewBox", "0 0 700 400")
     //class to make it responsive
     .classed("svg-content-responsive", true);
-  svg.selectAll("*").remove();
+
   // var new_name = this_project.split("[")[0].toLowerCase().replace(/ /g, "");
   var this_project = document.getElementById("txt_ide").value;
   var curr_month = document.getElementById("Month").value;
@@ -45,7 +45,7 @@ function UpdateEmailNet() {
 
   // console.log("social th", running_threshold, current_info.num_emails);
   data = reduce_the_emails(data);
-  console.log("final ", data);
+
   // bi partible graph
   var bp = viz
     .bP()
@@ -132,7 +132,7 @@ function UpdateEmailNet() {
     const namesS = [];
     var f = d3.select(this);
 
-    // console.log(d.key);
+    console.log(d.key);
 
     // get the current developer
     document.getElementById("current_node").innerHTML = d.key;

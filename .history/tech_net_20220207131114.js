@@ -24,7 +24,6 @@ function UpdateTechnicalNet() {
           document.getElementById("commit_per_dev").innerHTML = 0;
           svg = d3.select("#rightsvg");
           svg.selectAll("*").remove();
-
           // throw error;
         } else {
           data = d;
@@ -36,7 +35,7 @@ function UpdateTechnicalNet() {
           // var running_threshold = Math.floor(current_info.num_commits / 100);
           // console.log("tech th", running_threshold);
           var data = reduce_the_commits(data);
-          // console.log("after ", data);
+          console.log("after ", data);
           var g = svg.append("g").attr("transform", "translate(185,45)");
 
           var bp = viz

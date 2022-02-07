@@ -13,21 +13,21 @@ function UpdateprojectInfo() {
   document.getElementById("pro_month1").innerHTML = curr_month;
   document.getElementById("pro_month").innerHTML = curr_month;
 
-  // try {
-  //   email_info = JSON.parse(
-  //     readTextFile(`./UPDATED_Data/new/email_measures/${new_file_path}.json`)
-  //   );
-  // } catch {}
-  // try {
-  //   commit_info = JSON.parse(
-  //     readTextFile(`./UPDATED_Data/new/commits_measure/${new_file_path}.json`)
-  //   );
-  // } catch (err) {
-  //   commit_info = {};
-  //   commit_info.num_commits = 0;
-  //   commit_info.num_committers = 0;
-  //   commit_info.commit_per_dev = 0;
-  // }
+  try {
+    email_info = JSON.parse(
+      readTextFile(`./UPDATED_Data/new/email_measures/${new_file_path}.json`)
+    );
+  } catch {}
+  try {
+    commit_info = JSON.parse(
+      readTextFile(`./UPDATED_Data/new/commits_measure/${new_file_path}.json`)
+    );
+  } catch (err) {
+    commit_info = {};
+    commit_info.num_commits = 0;
+    commit_info.num_committers = 0;
+    commit_info.commit_per_dev = 0;
+  }
   project_info = JSON.parse(
     readTextFile(
       `./UPDATED_Data/new/new_about_data/${alias_to_name[this_project]}.json`
@@ -44,9 +44,9 @@ function UpdateprojectInfo() {
   Actual_change(project_info, to_dates);
 }
 
-// function Actual_change(email_info, commit_info, project_info, to_dates) {
+function Actual_change(email_info, commit_info, project_info, to_dates) {
 
-function Actual_change(project_info, to_dates) {
+function Actual_change(email_info, commit_info, project_info, to_dates) {
   document.getElementById("link").innerHTML =
     '<a href="' +
     `https://incubator.apache.org/projects/${project_info.project_name.toLowerCase()}.html` +
@@ -59,28 +59,28 @@ function Actual_change(project_info, to_dates) {
   document.getElementById("end1").innerHTML = project_info.end_date;
   document.getElementById("intro").innerHTML = project_info.description;
 
-  // document.getElementById("num_emails").innerHTML = Math.floor(
-  //   email_info.num_emails
-  // );
+  document.getElementById("num_emails").innerHTML = Math.floor(
+    email_info.num_emails
+  );
 
-  // document.getElementById("num_senders").innerHTML = Math.floor(
-  //   email_info.num_senders.toFixed(2)
-  // );
-  // document.getElementById("email_per_dev").innerHTML = Math.floor(
-  //   email_info.email_per_dev
-  // );
+  document.getElementById("num_senders").innerHTML = Math.floor(
+    email_info.num_senders.toFixed(2)
+  );
+  document.getElementById("email_per_dev").innerHTML = Math.floor(
+    email_info.email_per_dev
+  );
   document.getElementById("reports_month").innerHTML =
     project_info.start_date + "~" + project_info.end_date;
 
-  // document.getElementById("num_commits").innerHTML = Math.floor(
-  //   commit_info.num_commits
-  // );s
-  // document.getElementById("num_committers").innerHTML = Math.floor(
-  //   commit_info.num_committers
-  // );
-  // document.getElementById("commit_per_dev").innerHTML = Math.floor(
-  //   commit_info.commit_per_dev
-  // );
+  document.getElementById("num_commits").innerHTML = Math.floor(
+    commit_info.num_commits
+  );
+  document.getElementById("num_committers").innerHTML = Math.floor(
+    commit_info.num_committers
+  );
+  document.getElementById("commit_per_dev").innerHTML = Math.floor(
+    commit_info.commit_per_dev
+  );
   document.getElementById("mentor").innerHTML = project_info.mentor;
   // console.log(to_dates[0], to_dates[1]);
 

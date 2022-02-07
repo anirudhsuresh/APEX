@@ -13,7 +13,7 @@ function UpdateEmailNet() {
     .attr("viewBox", "0 0 700 400")
     //class to make it responsive
     .classed("svg-content-responsive", true);
-  svg.selectAll("*").remove();
+  // svg.selectAll("*").remove();
   // var new_name = this_project.split("[")[0].toLowerCase().replace(/ /g, "");
   var this_project = document.getElementById("txt_ide").value;
   var curr_month = document.getElementById("Month").value;

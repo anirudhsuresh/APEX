@@ -1,14 +1,14 @@
 // reset function to ensure that when new project is selected the month and the month slider resets to zero
 function resetAll() {
   console.log("its working");
-  document.getElementById("num_emails").innerHTML = 0;
+  // document.getElementById("num_emails").innerHTML = 0;
 
-  document.getElementById("num_senders").innerHTML = 0;
-  document.getElementById("email_per_dev").innerHTML = 0;
+  // document.getElementById("num_senders").innerHTML = 0;
+  // document.getElementById("email_per_dev").innerHTML = 0;
 
-  document.getElementById("num_commits").innerHTML = 0;
-  document.getElementById("num_committers").innerHTML = 0;
-  document.getElementById("commit_per_dev").innerHTML = 0;
+  // document.getElementById("num_commits").innerHTML = 0;
+  // document.getElementById("num_committers").innerHTML = 0;
+  // document.getElementById("commit_per_dev").innerHTML = 0;
 
   document.getElementById("MaxIncubation").value = "1";
   document.getElementById("Month").value = "1";

@@ -132,7 +132,7 @@ function UpdateEmailNet() {
     const namesS = [];
     var f = d3.select(this);
 
-    // console.log(d.key);
+    console.log(d.key);
 
     // get the current developer
     document.getElementById("current_node").innerHTML = d.key;

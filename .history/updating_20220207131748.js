@@ -1,14 +1,14 @@
 // reset function to ensure that when new project is selected the month and the month slider resets to zero
 function resetAll() {
   console.log("its working");
-  document.getElementById("num_emails").innerHTML = 0;
+  // document.getElementById("num_emails").innerHTML = 0;
 
-  document.getElementById("num_senders").innerHTML = 0;
-  document.getElementById("email_per_dev").innerHTML = 0;
+  // document.getElementById("num_senders").innerHTML = 0;
+  // document.getElementById("email_per_dev").innerHTML = 0;
 
-  document.getElementById("num_commits").innerHTML = 0;
-  document.getElementById("num_committers").innerHTML = 0;
-  document.getElementById("commit_per_dev").innerHTML = 0;
+  // document.getElementById("num_commits").innerHTML = 0;
+  // document.getElementById("num_committers").innerHTML = 0;
+  // document.getElementById("commit_per_dev").innerHTML = 0;
 
   document.getElementById("MaxIncubation").value = "1";
   document.getElementById("Month").value = "1";
@@ -16,23 +16,17 @@ function resetAll() {
 }
 // function updates all during normal month change ie not the range month change
 function updateAll() {
-  // console.log("i am here ");
-  var month = document.getElementById("MaxIncubation").value;
-  document.getElementById("Month").innerHTML = month;
-  console.log(month);
   getMonth();
   make_reports();
-
   // var this_project = document.getElementById("txt_ide").value;
-
-  UpdateprojectInfo();
-  UpdateEmailNet();
-  UpdateTechnicalNet();
-
   $("#chk").prop("checked", false);
   $("#make_range_slider").prop("checked", false);
   $("#hideableDiv").hide();
   $("#hideableDiv2").show();
+
+  UpdateprojectInfo();
+  UpdateEmailNet();
+  UpdateTechnicalNet();
 }
 
 function updateAll_for_range_slider() {

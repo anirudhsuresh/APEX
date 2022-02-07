@@ -13,21 +13,21 @@ function UpdateprojectInfo() {
   document.getElementById("pro_month1").innerHTML = curr_month;
   document.getElementById("pro_month").innerHTML = curr_month;
 
-  // try {
-  //   email_info = JSON.parse(
-  //     readTextFile(`./UPDATED_Data/new/email_measures/${new_file_path}.json`)
-  //   );
-  // } catch {}
-  // try {
-  //   commit_info = JSON.parse(
-  //     readTextFile(`./UPDATED_Data/new/commits_measure/${new_file_path}.json`)
-  //   );
-  // } catch (err) {
-  //   commit_info = {};
-  //   commit_info.num_commits = 0;
-  //   commit_info.num_committers = 0;
-  //   commit_info.commit_per_dev = 0;
-  // }
+  try {
+    email_info = JSON.parse(
+      readTextFile(`./UPDATED_Data/new/email_measures/${new_file_path}.json`)
+    );
+  } catch {}
+  try {
+    commit_info = JSON.parse(
+      readTextFile(`./UPDATED_Data/new/commits_measure/${new_file_path}.json`)
+    );
+  } catch (err) {
+    commit_info = {};
+    commit_info.num_commits = 0;
+    commit_info.num_committers = 0;
+    commit_info.commit_per_dev = 0;
+  }
   project_info = JSON.parse(
     readTextFile(
       `./UPDATED_Data/new/new_about_data/${alias_to_name[this_project]}.json`
@@ -74,7 +74,7 @@ function Actual_change(project_info, to_dates) {
 
   // document.getElementById("num_commits").innerHTML = Math.floor(
   //   commit_info.num_commits
-  // );s
+  // );
   // document.getElementById("num_committers").innerHTML = Math.floor(
   //   commit_info.num_committers
   // );
