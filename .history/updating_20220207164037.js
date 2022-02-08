@@ -19,7 +19,7 @@ function updateAll() {
   // console.log("i am here ");
   // var month = document.getElementById("MaxIncubation").value;
   // document.getElementById("Month").innerHTML = month;
-  // console.log(month);
+  console.log(month);
   getMonth();
   make_reports();
 

@@ -17,9 +17,9 @@ function resetAll() {
 // function updates all during normal month change ie not the range month change
 function updateAll() {
   // console.log("i am here ");
-  // var month = document.getElementById("MaxIncubation").value;
-  // document.getElementById("Month").innerHTML = month;
-  // console.log(month);
+  var month = document.getElementById("MaxIncubation").value;
+  document.getElementById("Month").innerHTML = month;
+  console.log(month);
   getMonth();
   make_reports();
 
